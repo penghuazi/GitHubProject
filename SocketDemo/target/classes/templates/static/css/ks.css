@@ -1,0 +1,440 @@
+/**
+ * GitHub Gist Theme
+ * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ */
+
+.hljs {
+  display: block;
+  background: white;
+  padding: 0.5em;
+  color: #333333;
+  overflow-x: auto;
+}
+
+.hljs-comment,
+.hljs-meta {
+  color: #969896;
+}
+
+.hljs-string,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-quote {
+  color: #df5000;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+  color: #a71d5d;
+}
+
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute {
+  color: #0086b3;
+}
+
+.hljs-section,
+.hljs-name {
+  color: #63a35c;
+}
+
+.hljs-tag {
+  color: #333333;
+}
+
+.hljs-title,
+.hljs-attr,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #795da3;
+}
+
+.hljs-addition {
+  color: #55a532;
+  background-color: #eaffea;
+}
+
+.hljs-deletion {
+  color: #bd2c00;
+  background-color: #ffecec;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+@charset "UTF-8";
+body, ul, h1, h2, h3, h4, h5, h6, p, blockquote {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 13px/1.7 PingFangSC-Regular,microsoft yahei,Arial,sans-serif; }
+
+/**
+* åˆå¹¶å•å…ƒæ ¼è¾¹æ¡†
+*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+* åŽ»é™¤é“¾æŽ¥é»˜è®¤çš„ä¸‹åˆ’çº¿ï¼Œæé«˜æ–‡å­—å¯è¯»æ€§
+*/
+a {
+  text-decoration: none;
+  color: #444; }
+
+/**
+* åŽ»æŽ‰ IE 10+ ç‚¹å‡»é“¾æŽ¥æ—¶çš„ç°è‰²èƒŒæ™¯
+*/
+a:active {
+  background-color: transparent; }
+
+/**
+* åŽ»æŽ‰ç‚¹å‡»æ—¶çš„ç„¦ç‚¹æ¡†ï¼ŒåŒæ—¶ä¿è¯ä½¿ç”¨é”®ç›˜å¯ä»¥æ˜¾ç¤ºç„¦ç‚¹æ¡†
+*/
+a:active,
+a:hover {
+  outline: 0 none; }
+
+/**
+* éžå¤§é¢ç§¯æ–‡å­—æŽ’ç‰ˆç½‘ç«™é€šå¸¸ä¸éœ€è¦åˆ—è¡¨é¡¹ï¼Œå¦‚æžœéœ€è¦å¯å•ç‹¬è®¾ç½®
+*/
+ul, ol {
+  list-style-type: none;
+  list-style-image: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
+section {
+  padding-bottom: 20px; }
+
+#app {
+  display: flex;
+  /*min-width: 1480px;*/
+  height: 100vh;
+  flex-flow: column; }
+  #app .ks-header {
+    height: 50px;
+    line-height: 50px;
+    background: #36474f;
+    padding: 0 20px;
+    color: #fff;
+    display: flex; }
+    #app .ks-header .ks-name {
+      flex: 1; }
+    #app .ks-header .ks-user-info a {
+      margin-left: 20px;
+      color: #fff; }
+  #app .ks-center {
+    background: green;
+    flex: 1;
+    display: flex; }
+  #app .ks-menu {
+    width: 260px;
+    background: #253238;
+    color: #fff;
+    line-height: 44px;
+    overflow-y: auto; }
+    #app .ks-menu a {
+      color: #fff; }
+    #app .ks-menu .menu-once li {
+      padding: 0 20px;
+      color: #777; }
+      #app .ks-menu .menu-once li a {
+        color: #fff; }
+        #app .ks-menu .menu-once li a:hover {
+          background: #1b2429; }
+    #app .ks-menu .menu-second {
+      margin: 0 -20px; }
+      #app .ks-menu .menu-second li a {
+        display: inline-block;
+        width: 100%;
+        margin-left: -20px;
+        padding-left: 40px; }
+      #app .ks-menu .menu-second .v-link-active {
+        color: #fff;
+        background: #2196f3; }
+        #app .ks-menu .menu-second .v-link-active:hover {
+          color: #fff;
+          background: #2196f3; }
+  #app .ks-content {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-flow: column;
+    overflow-y: auto; }
+    #app .ks-content .ks-breadcrumb {
+      padding-left: 20px;
+      height: 40px;
+      line-height: 40px;
+      background-color: #fff;
+      border-bottom: 1px solid #e9e9e9; }
+    #app .ks-content .ks-container-fluid {
+      background-color: #fff;
+      flex: 1;
+      margin: 20px;
+      border: 1px solid #e9e9e9;
+      padding: 20px; }
+  #app .ks-footer {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px 20px;
+    display: flex; }
+    #app .ks-footer .company {
+      flex: 1; }
+    #app .ks-footer .about-us span {
+      margin: 0 10px; }
+
+input, textarea {
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  background: #fff;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px; }
+
+
+
+textarea {
+  line-height: inherit;
+  padding: 10px; }
+
+.ks-form-group {
+  display: flex;
+  align-items: center; }
+  .ks-form-group + .ks-form-group {
+    margin-top: 30px; }
+  .ks-form-group label {
+    width: 140px;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+    align-self: baseline;
+    line-height: 36px; }
+  .ks-form-group em {
+    color: red;
+    margin-right: 5px; }
+  .ks-form-group input {
+    flex: 1;
+    box-sizing: border-box; }
+  .ks-form-group textarea {
+    min-height: 100px;
+    flex: 1; }
+  .ks-form-group p {
+    height: 36px;
+    line-height: 36px;
+    margin: 0; }
+  .ks-form-group span {
+    padding: 0 10px; }
+
+.ks-btn, .plain.ks-btn-danger, .plain.ks-btn-primary, .plain.ks-btn-success, .plain.ks-btn-warning, .plain.ks-btn-info, .plain.ks-btn-default, .ks-btn-danger, .ks-btn-primary, .ks-btn-success, .ks-btn-warning, .ks-btn-info, .ks-btn-default {
+  min-width: 90px;
+  font-size: 14px;
+  padding: 9px 11px;
+  border: 1px solid #c8c8c8;
+  background: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 36px;
+  outline: 0;
+  color: #fff; }
+  .ks-btn + .ks-btn, .plain.ks-btn-danger + .ks-btn, .plain.ks-btn-primary + .ks-btn, .plain.ks-btn-success + .ks-btn, .plain.ks-btn-warning + .ks-btn, .plain.ks-btn-info + .ks-btn, .plain.ks-btn-default + .ks-btn, .ks-btn-danger + .ks-btn, .ks-btn-primary + .ks-btn, .ks-btn-success + .ks-btn, .ks-btn-warning + .ks-btn, .ks-btn-info + .ks-btn, .ks-btn-default + .ks-btn, .ks-btn + .plain.ks-btn-danger, .plain.ks-btn-danger + .plain.ks-btn-danger, .plain.ks-btn-primary + .plain.ks-btn-danger, .plain.ks-btn-success + .plain.ks-btn-danger, .plain.ks-btn-warning + .plain.ks-btn-danger, .plain.ks-btn-info + .plain.ks-btn-danger, .plain.ks-btn-default + .plain.ks-btn-danger, .ks-btn-danger + .plain.ks-btn-danger, .ks-btn-primary + .plain.ks-btn-danger, .ks-btn-success + .plain.ks-btn-danger, .ks-btn-warning + .plain.ks-btn-danger, .ks-btn-info + .plain.ks-btn-danger, .ks-btn-default + .plain.ks-btn-danger, .ks-btn + .plain.ks-btn-primary, .plain.ks-btn-danger + .plain.ks-btn-primary, .plain.ks-btn-primary + .plain.ks-btn-primary, .plain.ks-btn-success + .plain.ks-btn-primary, .plain.ks-btn-warning + .plain.ks-btn-primary, .plain.ks-btn-info + .plain.ks-btn-primary, .plain.ks-btn-default + .plain.ks-btn-primary, .ks-btn-danger + .plain.ks-btn-primary, .ks-btn-primary + .plain.ks-btn-primary, .ks-btn-success + .plain.ks-btn-primary, .ks-btn-warning + .plain.ks-btn-primary, .ks-btn-info + .plain.ks-btn-primary, .ks-btn-default + .plain.ks-btn-primary, .ks-btn + .plain.ks-btn-success, .plain.ks-btn-danger + .plain.ks-btn-success, .plain.ks-btn-primary + .plain.ks-btn-success, .plain.ks-btn-success + .plain.ks-btn-success, .plain.ks-btn-warning + .plain.ks-btn-success, .plain.ks-btn-info + .plain.ks-btn-success, .plain.ks-btn-default + .plain.ks-btn-success, .ks-btn-danger + .plain.ks-btn-success, .ks-btn-primary + .plain.ks-btn-success, .ks-btn-success + .plain.ks-btn-success, .ks-btn-warning + .plain.ks-btn-success, .ks-btn-info + .plain.ks-btn-success, .ks-btn-default + .plain.ks-btn-success, .ks-btn + .plain.ks-btn-warning, .plain.ks-btn-danger + .plain.ks-btn-warning, .plain.ks-btn-primary + .plain.ks-btn-warning, .plain.ks-btn-success + .plain.ks-btn-warning, .plain.ks-btn-warning + .plain.ks-btn-warning, .plain.ks-btn-info + .plain.ks-btn-warning, .plain.ks-btn-default + .plain.ks-btn-warning, .ks-btn-danger + .plain.ks-btn-warning, .ks-btn-primary + .plain.ks-btn-warning, .ks-btn-success + .plain.ks-btn-warning, .ks-btn-warning + .plain.ks-btn-warning, .ks-btn-info + .plain.ks-btn-warning, .ks-btn-default + .plain.ks-btn-warning, .ks-btn + .plain.ks-btn-info, .plain.ks-btn-danger + .plain.ks-btn-info, .plain.ks-btn-primary + .plain.ks-btn-info, .plain.ks-btn-success + .plain.ks-btn-info, .plain.ks-btn-warning + .plain.ks-btn-info, .plain.ks-btn-info + .plain.ks-btn-info, .plain.ks-btn-default + .plain.ks-btn-info, .ks-btn-danger + .plain.ks-btn-info, .ks-btn-primary + .plain.ks-btn-info, .ks-btn-success + .plain.ks-btn-info, .ks-btn-warning + .plain.ks-btn-info, .ks-btn-info + .plain.ks-btn-info, .ks-btn-default + .plain.ks-btn-info, .ks-btn + .plain.ks-btn-default, .plain.ks-btn-danger + .plain.ks-btn-default, .plain.ks-btn-primary + .plain.ks-btn-default, .plain.ks-btn-success + .plain.ks-btn-default, .plain.ks-btn-warning + .plain.ks-btn-default, .plain.ks-btn-info + .plain.ks-btn-default, .plain.ks-btn-default + .plain.ks-btn-default, .ks-btn-danger + .plain.ks-btn-default, .ks-btn-primary + .plain.ks-btn-default, .ks-btn-success + .plain.ks-btn-default, .ks-btn-warning + .plain.ks-btn-default, .ks-btn-info + .plain.ks-btn-default, .ks-btn-default + .plain.ks-btn-default, .ks-btn + .ks-btn-danger, .plain.ks-btn-danger + .ks-btn-danger, .plain.ks-btn-primary + .ks-btn-danger, .plain.ks-btn-success + .ks-btn-danger, .plain.ks-btn-warning + .ks-btn-danger, .plain.ks-btn-info + .ks-btn-danger, .plain.ks-btn-default + .ks-btn-danger, .ks-btn-danger + .ks-btn-danger, .ks-btn-primary + .ks-btn-danger, .ks-btn-success + .ks-btn-danger, .ks-btn-warning + .ks-btn-danger, .ks-btn-info + .ks-btn-danger, .ks-btn-default + .ks-btn-danger, .ks-btn + .ks-btn-primary, .plain.ks-btn-danger + .ks-btn-primary, .plain.ks-btn-primary + .ks-btn-primary, .plain.ks-btn-success + .ks-btn-primary, .plain.ks-btn-warning + .ks-btn-primary, .plain.ks-btn-info + .ks-btn-primary, .plain.ks-btn-default + .ks-btn-primary, .ks-btn-danger + .ks-btn-primary, .ks-btn-primary + .ks-btn-primary, .ks-btn-success + .ks-btn-primary, .ks-btn-warning + .ks-btn-primary, .ks-btn-info + .ks-btn-primary, .ks-btn-default + .ks-btn-primary, .ks-btn + .ks-btn-success, .plain.ks-btn-danger + .ks-btn-success, .plain.ks-btn-primary + .ks-btn-success, .plain.ks-btn-success + .ks-btn-success, .plain.ks-btn-warning + .ks-btn-success, .plain.ks-btn-info + .ks-btn-success, .plain.ks-btn-default + .ks-btn-success, .ks-btn-danger + .ks-btn-success, .ks-btn-primary + .ks-btn-success, .ks-btn-success + .ks-btn-success, .ks-btn-warning + .ks-btn-success, .ks-btn-info + .ks-btn-success, .ks-btn-default + .ks-btn-success, .ks-btn + .ks-btn-warning, .plain.ks-btn-danger + .ks-btn-warning, .plain.ks-btn-primary + .ks-btn-warning, .plain.ks-btn-success + .ks-btn-warning, .plain.ks-btn-warning + .ks-btn-warning, .plain.ks-btn-info + .ks-btn-warning, .plain.ks-btn-default + .ks-btn-warning, .ks-btn-danger + .ks-btn-warning, .ks-btn-primary + .ks-btn-warning, .ks-btn-success + .ks-btn-warning, .ks-btn-warning + .ks-btn-warning, .ks-btn-info + .ks-btn-warning, .ks-btn-default + .ks-btn-warning, .ks-btn + .ks-btn-info, .plain.ks-btn-danger + .ks-btn-info, .plain.ks-btn-primary + .ks-btn-info, .plain.ks-btn-success + .ks-btn-info, .plain.ks-btn-warning + .ks-btn-info, .plain.ks-btn-info + .ks-btn-info, .plain.ks-btn-default + .ks-btn-info, .ks-btn-danger + .ks-btn-info, .ks-btn-primary + .ks-btn-info, .ks-btn-success + .ks-btn-info, .ks-btn-warning + .ks-btn-info, .ks-btn-info + .ks-btn-info, .ks-btn-default + .ks-btn-info, .ks-btn + .ks-btn-default, .plain.ks-btn-danger + .ks-btn-default, .plain.ks-btn-primary + .ks-btn-default, .plain.ks-btn-success + .ks-btn-default, .plain.ks-btn-warning + .ks-btn-default, .plain.ks-btn-info + .ks-btn-default, .plain.ks-btn-default + .ks-btn-default, .ks-btn-danger + .ks-btn-default, .ks-btn-primary + .ks-btn-default, .ks-btn-success + .ks-btn-default, .ks-btn-warning + .ks-btn-default, .ks-btn-info + .ks-btn-default, .ks-btn-default + .ks-btn-default {
+    margin-left: 10px; }
+
+.plain.ks-btn-danger, .plain.ks-btn-primary, .plain.ks-btn-success, .plain.ks-btn-warning, .plain.ks-btn-info, .plain.ks-btn-default {
+  background: #fcfcfc; }
+  .plain.ks-btn-danger:hover, .plain.ks-btn-primary:hover, .plain.ks-btn-success:hover, .plain.ks-btn-warning:hover, .plain.ks-btn-info:hover, .plain.ks-btn-default:hover {
+    background: white; }
+  .plain.ks-btn-danger:active, .plain.ks-btn-primary:active, .plain.ks-btn-success:active, .plain.ks-btn-warning:active, .plain.ks-btn-info:active, .plain.ks-btn-default:active {
+    background: #efefef; }
+
+/* çº¢è‰² */
+/* è“è‰² */
+/* ç»¿è‰² */
+/* æ©™è‰² */
+/* é’è‰² */
+/* é»˜è®¤ */
+.ks-btn-danger {
+  background: #F44336;
+  border-color: #F44336; }
+  .ks-btn-danger:hover {
+    background: #f55a4e; }
+  .ks-btn-danger:active {
+    background: #f32c1e; }
+
+.plain.ks-btn-danger {
+  color: #F44336;
+  border-color: #F44336; }
+
+.ks-btn-primary {
+  background: #2196F3;
+  border-color: #2196F3; }
+  .ks-btn-primary:hover {
+    background: #39a1f4; }
+  .ks-btn-primary:active {
+    background: #0d8aee; }
+
+.plain.ks-btn-primary {
+  color: #2196F3;
+  border-color: #2196F3; }
+
+.ks-btn-success {
+  background: #4CAF50;
+  border-color: #4CAF50; }
+  .ks-btn-success:hover {
+    background: #5cb860; }
+  .ks-btn-success:active {
+    background: #449d48; }
+
+.plain.ks-btn-success {
+  color: #4CAF50;
+  border-color: #4CAF50; }
+
+.ks-btn-warning {
+  background: #FF5722;
+  border-color: #FF5722; }
+  .ks-btn-warning:hover {
+    background: #ff6a3c; }
+  .ks-btn-warning:active {
+    background: #ff4409; }
+
+.plain.ks-btn-warning {
+  color: #FF5722;
+  border-color: #FF5722; }
+
+.ks-btn-info {
+  background: #00BCD4;
+  border-color: #00BCD4; }
+  .ks-btn-info:hover {
+    background: #00d3ee; }
+  .ks-btn-info:active {
+    background: #00a5bb; }
+
+.plain.ks-btn-info {
+  color: #00BCD4;
+  border-color: #00BCD4; }
+
+.ks-btn-default {
+  background: #fcfcfc;
+  border-color: #fcfcfc; }
+  .ks-btn-default:hover {
+    background: white; }
+  .ks-btn-default:active {
+    background: #efefef; }
+
+.plain.ks-btn-default {
+  color: #fcfcfc;
+  border-color: #fcfcfc; }
+
+.ks-btn-default {
+  color: #777;
+  border-color: #c8c8c8; }
+  .ks-btn-default:hover {
+    color: #444; }
+
+.table-striped table {
+  /* tableåŸºç¡€æ ·å¼ */
+  width: 100%;
+  white-space: nowrap; }
+  .table-striped table th, .table-striped table td {
+    padding: 10px 20px;
+    border: 0;
+    line-height: 1.7em; }
+  .table-striped table th {
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #e9e9e9;
+    font-weight: bold; }
+  .table-striped table td {
+    border-bottom: 1px solid #e9e9e9;
+    vertical-align: top; }
+    .table-striped table td a {
+      color: #2196F3;
+      cursor: pointer; }
+    .table-striped table td i {
+      padding-right: 10px; }
+
+.table-striped {
+  overflow-y: hidden;
+  margin: 0 -20px; }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc; }
+
+.ks-search-criteria {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-end; }
+  .ks-search-criteria .right {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap; }
+    .ks-search-criteria .right div {
+      order: -1;
+      margin-top: 20px; }
+      .ks-search-criteria .right div span {
+        margin-right: 10px; }
+    .ks-search-criteria .right div + div {
+      margin-left: 20px; }
+
+blockquote {
+  padding: 0 1em !important;
+  color: #777;
+  border-left: 0.25em solid #ddd; }
+
+hr {
+  height: 1px;
+  border: none;
+  border-top: 1px dashed #d8d8d8;
+  margin: 10px 0 !important; }
+
+.ks-code-inline {
+  background-color: #f9fafc;
+  border: 1px solid #eaeefb;
+  border-radius: 4px;
+  padding: 0 3px; }
+
+/*è‡ªå®šä¹‰æç¤º*/
+.ks-hljs, code, kbd, pre, samp {
+  font-family: Menlo,Monaco,Consolas,Courier,monospace; }
+
+.ks-hljs {
+  line-height: 1.8;
+  font-family: Menlo,Monaco,Consolas,Courier,monospace;
+  padding: 16px;
+  margin: 20px 0;
+  font-size: 13px;
+  background-color: #f9fafc;
+  border: 1px solid #eaeefb;
+  border-radius: 4px;
+  -webkit-font-smoothing: auto; }
+
+
+

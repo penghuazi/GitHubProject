@@ -1,0 +1,520 @@
+/**
+ * GitHub Gist Theme
+ * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
+ */
+
+.hljs {
+    display: block;
+    background: white;
+    padding: 0.5em;
+    color: #333333;
+    overflow-x: auto;
+}
+
+.hljs-comment,
+.hljs-meta {
+    color: #969896;
+}
+
+.hljs-string,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-strong,
+.hljs-emphasis,
+.hljs-quote {
+    color: #df5000;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+    color: #a71d5d;
+}
+
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-attribute {
+    color: #0086b3;
+}
+
+.hljs-section,
+.hljs-name {
+    color: #63a35c;
+}
+
+.hljs-tag {
+    color: #333333;
+}
+
+.hljs-title,
+.hljs-attr,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+    color: #795da3;
+}
+
+.hljs-addition {
+    color: #55a532;
+    background-color: #eaffea;
+}
+
+.hljs-deletion {
+    color: #bd2c00;
+    background-color: #ffecec;
+}
+
+.hljs-link {
+    text-decoration: underline;
+}
+.ks-row{display:table;table-layout:fixed;border-spacing:0}.ks-col,.ks-col-auto,.ks-col-auto-top,.ks-col-top,.KsPageGroup-statistical{display:table-cell;vertical-align:middle;word-break:break-all}.ks-col-auto-top,.ks-col-top{vertical-align:top}.ks-row-auto,.KsPageGroup{box-sizing:border-box;width:100%;display:table;border-spacing:0;table-layout:auto}.ks-col-auto,.ks-col-auto-top,.KsPageGroup-statistical{width:1px;white-space:nowrap}.ks-row{box-sizing:border-box;width:100%}.KsPageGroup li,.KsPage li{display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:4px;color:#000;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.KsPageGroup li:hover,.KsPage li:hover{background:#f5f5f5;color:#000}.KsPage .active,.KsPageGroup .active,.KsPageGroup li.active:hover,.KsPage li.active:hover{background:#2196f3;color:#fff}.KsPage .disabled,.KsPageGroup .disabled{color:#999;cursor:not-allowed}.KsPage .disabled:hover,.KsPageGroup .disabled:hover{background:transparent;color:#999}.KsPageGroup{color:#999;line-height:36px}.KsPageGroup-statistical{padding-right:20px}.KsPageGroup-statistical span{color:#000;padding:0 5px}.ks-row{display:table;table-layout:fixed;border-spacing:0}.ks-col,.ks-col-auto,.ks-col-auto-top,.ks-col-top,.KsPageGroup-statistical{display:table-cell;vertical-align:middle;word-break:break-all}.ks-col-auto-top,.ks-col-top{vertical-align:top}.ks-row-auto,.KsPageGroup{box-sizing:border-box;width:100%;display:table;border-spacing:0;table-layout:auto}.ks-col-auto,.ks-col-auto-top,.KsPageGroup-statistical{width:1px;white-space:nowrap}.ks-row{box-sizing:border-box;width:100%}.KsPageGroup li,.KsPage li{display:inline-block;width:36px;height:36px;line-height:36px;text-align:center;border-radius:4px;color:#000;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.KsPageGroup li:hover,.KsPage li:hover{background:#f5f5f5;color:#000}.KsPage .active,.KsPageGroup .active,.KsPageGroup li.active:hover,.KsPage li.active:hover{background:#2196f3;color:#fff}.KsPage .disabled,.KsPageGroup .disabled{color:#999;cursor:not-allowed}.KsPage .disabled:hover,.KsPageGroup .disabled:hover{background:transparent;color:#999}.KsPageGroup{color:#999;line-height:36px}.KsPageGroup-statistical{padding-right:20px}.KsPageGroup-statistical span{color:#000;padding:0 5px}.KSNRRadio{position:relative;display:inline-block;padding:2px 3px;vertical-align:middle;font-size:14px}.KSNRRadio__container.disable{opacity:.6}.KSNRRadio__container.disable *{cursor:not-allowed}.KSNRRadio__entity{display:none}.KSNRRadio__entity:checked+.KSNRRadio__skin:before{opacity:1}.KSNRRadio__text{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.KSNRRadio__skin,.KSNRRadio__text{display:inline-block;cursor:pointer}.KSNRRadio__skin{border:1px solid #d0d0d5;border-radius:50%;width:18px;height:18px;text-align:center;line-height:18px}.KSNRRadio__skin:before{content:"";display:inline-block;height:10px;width:10px;border-radius:50%;opacity:0;-webkit-transition:opacity .3s;transition:opacity .3s}.ks-image-box{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5)}.ks-image-box .image-content{position:fixed;top:54px;left:54px;right:54px;bottom:54px;background:#444}.ks-image-box img{max-width:100%;max-height:100%;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.ks-image-box i{position:absolute;right:10px;top:10px;width:54px;height:54px;text-align:center;line-height:54px;color:#fff;background:rgba(0,0,0,.25);font-size:33px;cursor:pointer;border-radius:2px}.ks-image-box i:hover{background:#f44336}.ks-image-box i:active{background:#ea1c0d}.h1{font-size:30px}.h2{font-size:24px}.h3{font-size:18px}.h4{font-size:16px}.h5{font-size:14px}.h6{font-size:12px}.primary{color:#2196f3;border-color:#2196f3}.primary-light{color:#42a5f5;border-color:#42a5f5}.primary-deep{color:#1e88e5;border-color:#1e88e5}.success{color:#4caf50;border-color:#4caf50}.success-light{color:#66bb6a;border-color:#66bb6a}.success-deep{color:#43a047;border-color:#43a047}.info{color:#00bcd4;border-color:#00bcd4}.info-light{color:#26c6da;border-color:#26c6da}.info-deep{color:#00acc1;border-color:#00acc1}.danger{color:#f44336;border-color:#f44336}.danger-light{color:#ef5350;border-color:#ef5350}.danger-deep{color:#e53935;border-color:#e53935}.warning{color:#ff5722;border-color:#ff5722}.warning-light{color:#ff7043;border-color:#ff7043}.warning-deep{color:#f4511e;border-color:#f4511e}.dark{color:#777;border-color:#777}.dark-light{color:#999;border-color:#999}.dark-deep{color:#444;border-color:#444}.gray{color:#f5f5f5;border-color:#f5f5f5}.gray-light{color:#fcfcfc;border-color:#fcfcfc}.gray-deep{color:#e9e9e9;border-color:#e9e9e9}.bg-primary{background:#2196f3;color:#fff}.bg-primary-light{background:#42a5f5;color:#fff}.bg-primary-deep{background:#1e88e5;color:#fff}.bg-success{background:#4caf50;color:#fff}.bg-success-light{background:#66bb6a;color:#fff}.bg-success-deep{background:#43a047;color:#fff}.bg-info{background:#00bcd4;color:#fff}.bg-info-light{background:#26c6da;color:#fff}.bg-info-deep{background:#00acc1;color:#fff}.bg-danger{background:#f44336;color:#fff}.bg-danger-light{background:#ef5350;color:#fff}.bg-danger-deep{background:#e53935;color:#fff}.bg-warning{background:#ff5722;color:#fff}.bg-warning-light{background:#ff7043;color:#fff}.bg-warning-deep{background:#f4511e;color:#fff}.bg-dark{background:#777;color:#fff}.bg-dark-light{background:#999;color:#fff}.bg-dark-deep{background:#444;color:#fff}.bg-gray{background:#f5f5f5;color:#fff}.bg-gray-light{background:#fcfcfc;color:#fff}.bg-gray-deep{background:#e9e9e9;color:#fff}.ks-row,.KsDateMonth,.KsDateMonth-date-btn,.KsDateMonth-date-days,.KsDateMonth-date-week,.KsDatePicker .KsDater,.KsDater,.KsDater-date-btn,.KsDater-date-days,.KsDater-date-week,.KsDaterMulti,.KsDaterMulti-date-btn,.KsDaterMulti-date-days,.KsDaterMulti-date-week,.KsDaterMultiPicker .KsDater,.KsDateYear,.KsDateYear-date-btn,.KsDateYear-date-days,.KsDateYear-date-week,.tb{display:table;table-layout:fixed;border-spacing:0}.ks-col,.ks-col-auto,.ks-col-auto-top,.ks-col-top,.KsDateMonth-date,.KsDateMonth-date-btn span,.KsDateMonth-date-days span,.KsDateMonth-date-head .interstice,.KsDateMonth-date-head .month,.KsDateMonth-date-head .next,.KsDateMonth-date-head .retreat,.KsDateMonth-date-head .year,.KsDateMonth-date-week span,.KsDater-date,.KsDater-date-btn span,.KsDater-date-days span,.KsDater-date-head .interstice,.KsDater-date-head .month,.KsDater-date-head .next,.KsDater-date-head .retreat,.KsDater-date-head .year,.KsDater-date-week span,.KsDaterMulti-date,.KsDaterMulti-date-btn span,.KsDaterMulti-date-days span,.KsDaterMulti-date-head .interstice,.KsDaterMulti-date-head .month,.KsDaterMulti-date-head .next,.KsDaterMulti-date-head .retreat,.KsDaterMulti-date-head .year,.KsDaterMulti-date-week span,.KsDateYear-date,.KsDateYear-date-btn span,.KsDateYear-date-days span,.KsDateYear-date-head .interstice,.KsDateYear-date-head .month,.KsDateYear-date-head .next,.KsDateYear-date-head .retreat,.KsDateYear-date-head .year,.KsDateYear-date-week span,.tb-cell{display:table-cell;vertical-align:middle;word-break:break-all}.ib-w,.ib-w.ib{letter-spacing:-.31em;word-spacing:-.43em;text-rendering:optimizespeed;font-family:PingFangSC-Regular,microsoft yahei,Arial,sans-serif;display:-ms-flexbox;-ms-flex-flow:row wrap;-ms-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start}.ib{display:inline-block;zoom:1;letter-spacing:normal;word-spacing:normal;text-rendering:auto;box-sizing:border-box}.ib,.ks-col-auto-top,.ks-col-top{vertical-align:top}.ks-row-auto,.KsDateMonth-date-head,.KsDateMonthPicker-input,.KsDatePicker-input,.KsDater-date-head,.KsDaterMulti-date-head,.KsDaterMultiPicker-input,.KsDateYear-date-head,.KsDateYearPicker-input{box-sizing:border-box;width:100%;display:table;border-spacing:0;table-layout:auto}.ks-col-auto,.ks-col-auto-top,.KsDateMonth-date-head .month,.KsDateMonth-date-head .year,.KsDater-date-head .month,.KsDater-date-head .year,.KsDaterMulti-date-head .month,.KsDaterMulti-date-head .year,.KsDateYear-date-head .month,.KsDateYear-date-head .year{width:1px;white-space:nowrap}.ks-row,.KsDateMonth,.KsDateMonth-date-btn,.KsDateMonth-date-days,.KsDateMonth-date-week,.KsDatePicker .KsDater,.KsDater,.KsDater-date-btn,.KsDater-date-days,.KsDater-date-week,.KsDaterMulti,.KsDaterMulti-date-btn,.KsDaterMulti-date-days,.KsDaterMulti-date-week,.KsDaterMultiPicker .KsDater,.KsDateYear,.KsDateYear-date-btn,.KsDateYear-date-days,.KsDateYear-date-week,.tb{box-sizing:border-box;width:100%}.KsDateMonthPicker-input,.KsDatePicker-input,.KsDaterMultiPicker-input,.KsDateYearPicker-input{background:#fff;border:1px solid #c8c8c8;border-radius:4px}.KsDateMonthPicker-input .date-icon,.KsDatePicker-input .date-icon,.KsDaterMultiPicker-input .date-icon,.KsDateYearPicker-input .date-icon{border-right:1px solid #c8c8c8}.KsDateMonthPicker-input .date-icon i,.KsDatePicker-input .date-icon i,.KsDaterMultiPicker-input .date-icon i,.KsDateYearPicker-input .date-icon i{padding:11px}.KsDateMonthPicker-input input,.KsDatePicker-input input,.KsDaterMultiPicker-input input,.KsDateYearPicker-input input{height:36px;border:0;outline:0;padding:0 10px;width:100%;box-sizing:border-box;background:transparent}.KsDateMonth-date-btn,.KsDateMonth-date-days,.KsDateMonth-date-week,.KsDater-date-btn,.KsDater-date-days,.KsDater-date-week,.KsDaterMulti-date-btn,.KsDaterMulti-date-days,.KsDaterMulti-date-week,.KsDateYear-date-btn,.KsDateYear-date-days,.KsDateYear-date-week{padding:0 32px;text-align:center;line-height:36px}.KsDateMonth-date-btn,.KsDateMonth-date-days,.KsDater-date-btn,.KsDater-date-days,.KsDaterMulti-date-btn,.KsDaterMulti-date-days,.KsDateYear-date-btn,.KsDateYear-date-days{padding-bottom:5px}.KsDateMonth-date-btn span,.KsDateMonth-date-days span,.KsDater-date-btn span,.KsDater-date-days span,.KsDaterMulti-date-btn span,.KsDaterMulti-date-days span,.KsDateYear-date-btn span,.KsDateYear-date-days span{cursor:pointer;border-radius:4px}.KsDateMonth-date-btn span:hover,.KsDateMonth-date-days span:hover,.KsDater-date-btn span:hover,.KsDater-date-days span:hover,.KsDaterMulti-date-btn span:hover,.KsDaterMulti-date-days span:hover,.KsDateYear-date-btn span:hover,.KsDateYear-date-days span:hover{background:#f5f5f5}.KsDateMonth-date-btn span.active,.KsDateMonth-date-days span.active,.KsDater-date-btn span.active,.KsDater-date-days span.active,.KsDaterMulti-date-btn span.active,.KsDaterMulti-date-days span.active,.KsDateYear-date-btn span.active,.KsDateYear-date-days span.active{color:#fff;background:#2196f3}.KsDateMonth-date-btn .collect,.KsDateMonth-date-btn .future,.KsDateMonth-date-btn .pass,.KsDateMonth-date-days .collect,.KsDateMonth-date-days .future,.KsDateMonth-date-days .pass,.KsDater-date-btn .collect,.KsDater-date-btn .future,.KsDater-date-btn .pass,.KsDater-date-days .collect,.KsDater-date-days .future,.KsDater-date-days .pass,.KsDaterMulti-date-btn .collect,.KsDaterMulti-date-btn .future,.KsDaterMulti-date-btn .pass,.KsDaterMulti-date-days .collect,.KsDaterMulti-date-days .future,.KsDaterMulti-date-days .pass,.KsDateYear-date-btn .collect,.KsDateYear-date-btn .future,.KsDateYear-date-btn .pass,.KsDateYear-date-days .collect,.KsDateYear-date-days .future,.KsDateYear-date-days .pass{color:#c8c8c8}.KsDateMonth-date-btn .scope-bg,.KsDateMonth-date-days .scope-bg,.KsDater-date-btn .scope-bg,.KsDater-date-days .scope-bg,.KsDaterMulti-date-btn .scope-bg,.KsDaterMulti-date-days .scope-bg,.KsDateYear-date-btn .scope-bg,.KsDateYear-date-days .scope-bg{background:#f5f5f5;border-radius:0}.KsDateMonth,.KsDatePicker .KsDater,.KsDater,.KsDaterMulti,.KsDaterMultiPicker .KsDater,.KsDateYear{display:inline-block;margin-top:-1px}.KsDateMonth-date,.KsDater-date,.KsDaterMulti-date,.KsDateYear-date{border:1px solid #c8c8c8;border-left:transparent;width:314px;background:#fff}.KsDateMonth-date-head,.KsDater-date-head,.KsDaterMulti-date-head,.KsDateYear-date-head{padding:30px 18px 15px;font-size:14px}.KsDateMonth-date-head .next,.KsDateMonth-date-head .retreat,.KsDater-date-head .next,.KsDater-date-head .retreat,.KsDaterMulti-date-head .next,.KsDaterMulti-date-head .retreat,.KsDateYear-date-head .next,.KsDateYear-date-head .retreat{cursor:pointer}.KsDateMonth-date-head .next,.KsDater-date-head .next,.KsDaterMulti-date-head .next,.KsDateYear-date-head .next{text-align:right}.KsDateMonth-date-week,.KsDater-date-week,.KsDaterMulti-date-week,.KsDateYear-date-week{font-weight:700;color:#c8c8c8}.KsDateMonth-date-week .week,.KsDater-date-week .week,.KsDaterMulti-date-week .week,.KsDateYear-date-week .week{color:#ef5350}.KsDateMonth-date-days:last-child,.KsDater-date-days:last-child,.KsDaterMulti-date-days:last-child,.KsDateYear-date-days:last-child{margin-bottom:10px}.KsDateMonth-date-btn select,.KsDater-date-btn select,.KsDaterMulti-date-btn select,.KsDateYear-date-btn select{width:70px;border-color:#e5e5e5}.KsDateMonth-date-btn .mlr-10,.KsDater-date-btn .mlr-10,.KsDaterMulti-date-btn .mlr-10,.KsDateYear-date-btn .mlr-10{margin:0 10px}.KsDateMonth-date-btn .reset,.KsDateMonth-date-btn .today,.KsDater-date-btn .reset,.KsDater-date-btn .today,.KsDaterMulti-date-btn .reset,.KsDaterMulti-date-btn .today,.KsDateYear-date-btn .reset,.KsDateYear-date-btn .today{color:#2196f3}.KsDateMonth-date-btn .clear,.KsDater-date-btn .clear,.KsDaterMulti-date-btn .clear,.KsDateYear-date-btn .clear{color:#f44336}.KsDateMonth-date-btn .clear:hover,.KsDateMonth-date-btn .collect:hover,.KsDateMonth-date-btn .reset:hover,.KsDateMonth-date-btn .selects:hover,.KsDateMonth-date-btn .today:hover,.KsDater-date-btn .clear:hover,.KsDater-date-btn .collect:hover,.KsDater-date-btn .reset:hover,.KsDater-date-btn .selects:hover,.KsDater-date-btn .today:hover,.KsDaterMulti-date-btn .clear:hover,.KsDaterMulti-date-btn .collect:hover,.KsDaterMulti-date-btn .reset:hover,.KsDaterMulti-date-btn .selects:hover,.KsDaterMulti-date-btn .today:hover,.KsDateYear-date-btn .clear:hover,.KsDateYear-date-btn .collect:hover,.KsDateYear-date-btn .reset:hover,.KsDateYear-date-btn .selects:hover,.KsDateYear-date-btn .today:hover{background:transparent}.KsDateMonth-date-btn .clear,.KsDateMonth-date-btn .today,.KsDater-date-btn .clear,.KsDater-date-btn .today,.KsDaterMulti-date-btn .clear,.KsDaterMulti-date-btn .today,.KsDateYear-date-btn .clear,.KsDateYear-date-btn .today{padding-bottom:20px}.KsDateMonth-date:first-child,.KsDater-date:first-child,.KsDaterMulti-date:first-child,.KsDateYear-date:first-child{border-left:1px solid #c8c8c8}.KsDateMonth,.KsDatePicker .KsDater,.KsDater,.KsDaterMulti,.KsDaterMultiPicker .KsDater,.KsDateYear{z-index:1;width:auto;min-width:316px}.KsDateMonth-date-head .interstice,.KsDater-date-head .interstice,.KsDaterMulti-date-head .interstice,.KsDateYear-date-head .interstice{width:16px}.KsDateMonth-date-head .month,.KsDater-date-head .month,.KsDaterMulti-date-head .month,.KsDateYear-date-head .month{font-weight:700}.KsDateMonthPicker .KsDateMonth,.KsDateMonthPicker .KsDater,.KsDatePicker .KsDateMonth,.KsDatePicker .KsDater,.KsDaterMultiPicker .KsDateMonth,.KsDaterMultiPicker .KsDater,.KsDateYearPicker .KsDateMonth,.KsDateYearPicker .KsDater{position:absolute}.KsDatePicker .KsDater-head .year,.KsDaterMultiPicker .KsDater-head .year{color:#c8c8c8}.KsDateMonthPicker .KsDater-date-head .year,.KsDateYearPicker .KsDater-date-head .year{font-weight:700}.KsDateMonthPicker .KsDater-days,.KsDateYearPicker .KsDater-days{margin:28px 0}.readonly.KsDatePicker .KsDater-date,.readonly.KsDaterMultiPicker .KsDaterMulti-date{background:#f5f5f5}.readonly.KsDatePicker .KsDater-date-days span,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days span{pointer-events:none;color:#c8c8c8}.readonly.KsDatePicker .KsDater-date-days span.active,.readonly.KsDatePicker .KsDater-date-days span.begin-active,.readonly.KsDatePicker .KsDater-date-days span.end-active,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days span.active,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days span.begin-active,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days span.end-active{background:#777;border-radius:0;color:#fff}.readonly.KsDatePicker .KsDater-date-days-btn,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days-btn{padding:0}.readonly.KsDatePicker .KsDater-date-days-btn .collect,.readonly.KsDatePicker .KsDater-date-days-btn .reset,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days-btn .collect,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days-btn .reset{padding:0 32px 5px;pointer-events:none}.readonly.KsDatePicker .KsDater-date-days-btn .reset,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days-btn .reset{text-align:left;padding-left:42px}.readonly.KsDatePicker .KsDater-date-days-btn .collect,.readonly.KsDaterMultiPicker .KsDaterMulti-date-days-btn .collect{border-left:8px solid #f5f5f5;margin-left:-5px;display:block}.KsDatePicker{position:relative}.KsDaterMulti-date{min-width:316px}.KsDaterMulti-date-btn{border-top:1px solid #c8c8c8}.KsDaterMultiPicker{position:relative}.KsDaterMultiPicker-input input{text-align:center;min-width:100px}.KsDaterMultiPicker-input .scope-icon{color:#26c6da}.KsDaterMultiPicker .KsDaterMulti{position:absolute}.KsDaterMultiPicker-btn{margin-top:20px;border-top:1px solid #c8c8c8}.KsDaterMultiPicker-btn .collect,.KsDaterMultiPicker-btn .reset{line-height:44px;height:44px}.KsDateMonthPicker,.KsDateYear{position:absolute}.readonly.KsDatePicker .KsDatePicker-input,.readonly.KsDaterMultiPicker .KsDaterMultiPicker-input{background:#e9e9e9}@charset "UTF-8";
+body, ul, h1, h2, h3, h4, h5, h6, p, blockquote, input {
+    margin: 0;
+    padding: 0; }
+
+body {
+    font: 13px/1.7 PingFangSC-Regular,Arial,microsoft yahei,sans-serif; }
+
+/**
+* 合并单元格边框
+*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+/**
+* 去除链接默认的下划线，提高文字可读性
+*/
+a {
+    text-decoration: none;
+    color: #444; }
+
+/**
+* 去掉 IE 10+ 点击链接时的灰色背景
+*/
+a:active {
+    background-color: transparent; }
+
+/**
+* 去掉点击时的焦点框，同时保证使用键盘可以显示焦点框
+*/
+a:active,
+a:hover {
+    outline: 0 none; }
+
+/**
+* 非大面积文字排版网站通常不需要列表项，如果需要可单独设置
+*/
+ul, ol {
+    list-style-type: none;
+    list-style-image: none; }
+
+/**
+* 标题字体大小
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; }
+
+h1 {
+    font-size: 30px; }
+
+h2 {
+    font-size: 24px; }
+
+h3 {
+    font-size: 18px; }
+
+h4 {
+    font-size: 16px; }
+
+h5 {
+    font-size: 14px; }
+
+h6 {
+    font-size: 12px; }
+
+section {
+    padding-bottom: 20px; }
+
+blockquote {
+    padding: 0 1em !important;
+    color: #777;
+    border-left: 0.25em solid #ddd; }
+
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #d8d8d8;
+    margin: 10px 0 !important; }
+
+.ks-code-inline {
+    background-color: #f9fafc;
+    border: 1px solid #eaeefb;
+    border-radius: 4px;
+    padding: 0 3px; }
+
+.ks-hljs {
+    overflow-x: auto;
+    line-height: 1.8;
+    font-family: Menlo,Monaco,Consolas,Courier,monospace;
+    padding: 16px;
+    margin: 20px 0;
+    font-size: 12px;
+    background-color: #f9fafc;
+    border: 1px solid #eaeefb;
+    border-radius: 4px;
+    -webkit-font-smoothing: auto; }
+
+.ks-app {
+    min-width: 1180px;
+    height: 100vh;
+    flex-flow: column; }
+.ks-app .ks-header {
+    height: 50px;
+    line-height: 50px;
+    background: #36474f;
+    padding: 0 20px;
+    color: #fff; }
+.ks-app .ks-header .ks-name {
+    flex: 1; }
+.ks-app .ks-header .ks-name img {
+    vertical-align: middle; }
+.ks-app .ks-header .ks-user-info a {
+    margin-left: 20px;
+    color: #fff; }
+.ks-app .ks-center {
+    background: green;
+    flex: 1; }
+.ks-app .ks-menu {
+    width: 260px;
+    background: #253238;
+    color: #fff;
+    line-height: 44px;
+    overflow-y: auto; }
+.ks-app .ks-menu a {
+    color: #fff; }
+.ks-app .ks-menu .menu-once li {
+    padding: 0 20px;
+    color: #777; }
+.ks-app .ks-menu .menu-once li a {
+    color: #fff; }
+.ks-app .ks-menu .menu-once li a:hover {
+    background: #1b2429; }
+.ks-app .ks-menu .menu-second {
+    margin: 0 -20px; }
+.ks-app .ks-menu .menu-second li a {
+    display: inline-block;
+    width: 100%;
+    margin-left: -20px;
+    padding-left: 40px;
+    background: #1d272c; }
+.ks-app .ks-menu .menu-second .v-link-active {
+    color: #fff;
+    background: #2196f3; }
+.ks-app .ks-menu .menu-second .v-link-active:hover {
+    color: #fff;
+    background: #2196f3; }
+.ks-app .ks-content {
+    background-color: #f5f5f5;
+    flex-flow: column;
+    overflow-y: auto; }
+.ks-app .ks-content .ks-breadcrumb {
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #e9e9e9; }
+.ks-app .ks-content .ks-container-fluid {
+    margin: 20px; }
+.ks-app .ks-content .ks-container-fluid .container-box {
+    padding: 20px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    margin-bottom: 20px;
+    min-height: 600px; }
+.ks-app .ks-footer {
+    height: 50px;
+    line-height: 50px; }
+.ks-app .ks-footer .about-us span {
+    margin: 0 10px; }
+
+input, select, textarea {
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    background: #fff;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px; }
+
+.form {
+    max-width: 680px;
+    margin: 20px auto 20px; }
+
+input:focus, textarea:focus {
+    border-color: #00bcd4;
+    outline: 0; }
+
+input[type=checkbox] {
+    margin-right: 10px; }
+input[type=checkbox] + input[type=checkbox] {
+    margin-left: 20px; }
+
+input[type=radio] {
+    margin-right: 10px; }
+input[type=radio] + input[type=radio] {
+    margin-left: 20px; }
+
+select {
+    outline: 0; }
+
+textarea {
+    line-height: inherit;
+    padding: 10px; }
+
+.ks-form-group {
+    align-items: center; }
+.ks-form-group + .ks-form-group {
+    margin-top: 30px; }
+.ks-form-group > label {
+    width: 140px;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+    align-self: baseline;
+    line-height: 36px; }
+.ks-form-group em {
+    color: red;
+    margin-right: 5px; }
+.ks-form-group input {
+    box-sizing: border-box;
+    vertical-align: middle; }
+.ks-form-group textarea {
+    min-height: 100px; }
+.ks-form-group p {
+    height: 36px;
+    line-height: 36px;
+    margin: 0; }
+.ks-form-group span {
+    padding: 0 10px; }
+.ks-form-group .ks-line-box label {
+    font-weight: normal;
+    margin-right: 20px; }
+
+.has-error {
+    position: relative;
+    line-height: 36px; }
+.has-error i {
+    vertical-align: middle;
+    margin-right: 10px; }
+.has-error .error-msg {
+    line-height: 22px;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    white-space: nowrap;
+    padding: 0;
+    color: #F44336; }
+.has-error .error-msg span {
+    padding: 0; }
+
+.ks-btn, .plain.ks-btn-danger, .plain.ks-btn-primary, .plain.ks-btn-success, .plain.ks-btn-warning, .plain.ks-btn-info, .plain.ks-btn-default, .ks-btn-danger, .ks-btn-primary, .ks-btn-success, .ks-btn-warning, .ks-btn-info, .ks-btn-default {
+    min-width: 90px;
+    font-size: 14px;
+    padding: 9px 11px;
+    border: 1px solid #c8c8c8;
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 36px;
+    line-height: 1;
+    outline: 0;
+    color: #fff; }
+.ks-btn + .ks-btn, .plain.ks-btn-danger + .ks-btn, .plain.ks-btn-primary + .ks-btn, .plain.ks-btn-success + .ks-btn, .plain.ks-btn-warning + .ks-btn, .plain.ks-btn-info + .ks-btn, .plain.ks-btn-default + .ks-btn, .ks-btn-danger + .ks-btn, .ks-btn-primary + .ks-btn, .ks-btn-success + .ks-btn, .ks-btn-warning + .ks-btn, .ks-btn-info + .ks-btn, .ks-btn-default + .ks-btn, .ks-btn + .plain.ks-btn-danger, .plain.ks-btn-danger + .plain.ks-btn-danger, .plain.ks-btn-primary + .plain.ks-btn-danger, .plain.ks-btn-success + .plain.ks-btn-danger, .plain.ks-btn-warning + .plain.ks-btn-danger, .plain.ks-btn-info + .plain.ks-btn-danger, .plain.ks-btn-default + .plain.ks-btn-danger, .ks-btn-danger + .plain.ks-btn-danger, .ks-btn-primary + .plain.ks-btn-danger, .ks-btn-success + .plain.ks-btn-danger, .ks-btn-warning + .plain.ks-btn-danger, .ks-btn-info + .plain.ks-btn-danger, .ks-btn-default + .plain.ks-btn-danger, .ks-btn + .plain.ks-btn-primary, .plain.ks-btn-danger + .plain.ks-btn-primary, .plain.ks-btn-primary + .plain.ks-btn-primary, .plain.ks-btn-success + .plain.ks-btn-primary, .plain.ks-btn-warning + .plain.ks-btn-primary, .plain.ks-btn-info + .plain.ks-btn-primary, .plain.ks-btn-default + .plain.ks-btn-primary, .ks-btn-danger + .plain.ks-btn-primary, .ks-btn-primary + .plain.ks-btn-primary, .ks-btn-success + .plain.ks-btn-primary, .ks-btn-warning + .plain.ks-btn-primary, .ks-btn-info + .plain.ks-btn-primary, .ks-btn-default + .plain.ks-btn-primary, .ks-btn + .plain.ks-btn-success, .plain.ks-btn-danger + .plain.ks-btn-success, .plain.ks-btn-primary + .plain.ks-btn-success, .plain.ks-btn-success + .plain.ks-btn-success, .plain.ks-btn-warning + .plain.ks-btn-success, .plain.ks-btn-info + .plain.ks-btn-success, .plain.ks-btn-default + .plain.ks-btn-success, .ks-btn-danger + .plain.ks-btn-success, .ks-btn-primary + .plain.ks-btn-success, .ks-btn-success + .plain.ks-btn-success, .ks-btn-warning + .plain.ks-btn-success, .ks-btn-info + .plain.ks-btn-success, .ks-btn-default + .plain.ks-btn-success, .ks-btn + .plain.ks-btn-warning, .plain.ks-btn-danger + .plain.ks-btn-warning, .plain.ks-btn-primary + .plain.ks-btn-warning, .plain.ks-btn-success + .plain.ks-btn-warning, .plain.ks-btn-warning + .plain.ks-btn-warning, .plain.ks-btn-info + .plain.ks-btn-warning, .plain.ks-btn-default + .plain.ks-btn-warning, .ks-btn-danger + .plain.ks-btn-warning, .ks-btn-primary + .plain.ks-btn-warning, .ks-btn-success + .plain.ks-btn-warning, .ks-btn-warning + .plain.ks-btn-warning, .ks-btn-info + .plain.ks-btn-warning, .ks-btn-default + .plain.ks-btn-warning, .ks-btn + .plain.ks-btn-info, .plain.ks-btn-danger + .plain.ks-btn-info, .plain.ks-btn-primary + .plain.ks-btn-info, .plain.ks-btn-success + .plain.ks-btn-info, .plain.ks-btn-warning + .plain.ks-btn-info, .plain.ks-btn-info + .plain.ks-btn-info, .plain.ks-btn-default + .plain.ks-btn-info, .ks-btn-danger + .plain.ks-btn-info, .ks-btn-primary + .plain.ks-btn-info, .ks-btn-success + .plain.ks-btn-info, .ks-btn-warning + .plain.ks-btn-info, .ks-btn-info + .plain.ks-btn-info, .ks-btn-default + .plain.ks-btn-info, .ks-btn + .plain.ks-btn-default, .plain.ks-btn-danger + .plain.ks-btn-default, .plain.ks-btn-primary + .plain.ks-btn-default, .plain.ks-btn-success + .plain.ks-btn-default, .plain.ks-btn-warning + .plain.ks-btn-default, .plain.ks-btn-info + .plain.ks-btn-default, .plain.ks-btn-default + .plain.ks-btn-default, .ks-btn-danger + .plain.ks-btn-default, .ks-btn-primary + .plain.ks-btn-default, .ks-btn-success + .plain.ks-btn-default, .ks-btn-warning + .plain.ks-btn-default, .ks-btn-info + .plain.ks-btn-default, .ks-btn-default + .plain.ks-btn-default, .ks-btn + .ks-btn-danger, .plain.ks-btn-danger + .ks-btn-danger, .plain.ks-btn-primary + .ks-btn-danger, .plain.ks-btn-success + .ks-btn-danger, .plain.ks-btn-warning + .ks-btn-danger, .plain.ks-btn-info + .ks-btn-danger, .plain.ks-btn-default + .ks-btn-danger, .ks-btn-danger + .ks-btn-danger, .ks-btn-primary + .ks-btn-danger, .ks-btn-success + .ks-btn-danger, .ks-btn-warning + .ks-btn-danger, .ks-btn-info + .ks-btn-danger, .ks-btn-default + .ks-btn-danger, .ks-btn + .ks-btn-primary, .plain.ks-btn-danger + .ks-btn-primary, .plain.ks-btn-primary + .ks-btn-primary, .plain.ks-btn-success + .ks-btn-primary, .plain.ks-btn-warning + .ks-btn-primary, .plain.ks-btn-info + .ks-btn-primary, .plain.ks-btn-default + .ks-btn-primary, .ks-btn-danger + .ks-btn-primary, .ks-btn-primary + .ks-btn-primary, .ks-btn-success + .ks-btn-primary, .ks-btn-warning + .ks-btn-primary, .ks-btn-info + .ks-btn-primary, .ks-btn-default + .ks-btn-primary, .ks-btn + .ks-btn-success, .plain.ks-btn-danger + .ks-btn-success, .plain.ks-btn-primary + .ks-btn-success, .plain.ks-btn-success + .ks-btn-success, .plain.ks-btn-warning + .ks-btn-success, .plain.ks-btn-info + .ks-btn-success, .plain.ks-btn-default + .ks-btn-success, .ks-btn-danger + .ks-btn-success, .ks-btn-primary + .ks-btn-success, .ks-btn-success + .ks-btn-success, .ks-btn-warning + .ks-btn-success, .ks-btn-info + .ks-btn-success, .ks-btn-default + .ks-btn-success, .ks-btn + .ks-btn-warning, .plain.ks-btn-danger + .ks-btn-warning, .plain.ks-btn-primary + .ks-btn-warning, .plain.ks-btn-success + .ks-btn-warning, .plain.ks-btn-warning + .ks-btn-warning, .plain.ks-btn-info + .ks-btn-warning, .plain.ks-btn-default + .ks-btn-warning, .ks-btn-danger + .ks-btn-warning, .ks-btn-primary + .ks-btn-warning, .ks-btn-success + .ks-btn-warning, .ks-btn-warning + .ks-btn-warning, .ks-btn-info + .ks-btn-warning, .ks-btn-default + .ks-btn-warning, .ks-btn + .ks-btn-info, .plain.ks-btn-danger + .ks-btn-info, .plain.ks-btn-primary + .ks-btn-info, .plain.ks-btn-success + .ks-btn-info, .plain.ks-btn-warning + .ks-btn-info, .plain.ks-btn-info + .ks-btn-info, .plain.ks-btn-default + .ks-btn-info, .ks-btn-danger + .ks-btn-info, .ks-btn-primary + .ks-btn-info, .ks-btn-success + .ks-btn-info, .ks-btn-warning + .ks-btn-info, .ks-btn-info + .ks-btn-info, .ks-btn-default + .ks-btn-info, .ks-btn + .ks-btn-default, .plain.ks-btn-danger + .ks-btn-default, .plain.ks-btn-primary + .ks-btn-default, .plain.ks-btn-success + .ks-btn-default, .plain.ks-btn-warning + .ks-btn-default, .plain.ks-btn-info + .ks-btn-default, .plain.ks-btn-default + .ks-btn-default, .ks-btn-danger + .ks-btn-default, .ks-btn-primary + .ks-btn-default, .ks-btn-success + .ks-btn-default, .ks-btn-warning + .ks-btn-default, .ks-btn-info + .ks-btn-default, .ks-btn-default + .ks-btn-default {
+    margin-left: 10px; }
+
+.plain.ks-btn-danger, .plain.ks-btn-primary, .plain.ks-btn-success, .plain.ks-btn-warning, .plain.ks-btn-info, .plain.ks-btn-default {
+    background: #fcfcfc; }
+.plain.ks-btn-danger:hover, .plain.ks-btn-primary:hover, .plain.ks-btn-success:hover, .plain.ks-btn-warning:hover, .plain.ks-btn-info:hover, .plain.ks-btn-default:hover {
+    background: white; }
+.plain.ks-btn-danger:active, .plain.ks-btn-primary:active, .plain.ks-btn-success:active, .plain.ks-btn-warning:active, .plain.ks-btn-info:active, .plain.ks-btn-default:active {
+    background: #efefef; }
+
+/* 红色 */
+/* 蓝色 */
+/* 绿色 */
+/* 橙色 */
+/* 青色 */
+/* 默认 */
+.ks-btn-danger {
+    background: #F44336;
+    border-color: #F44336; }
+.ks-btn-danger:hover {
+    background: #f55a4e; }
+.ks-btn-danger:active {
+    background: #f32c1e; }
+
+.plain.ks-btn-danger {
+    color: #F44336;
+    border-color: #F44336; }
+
+.ks-btn-primary {
+    background: #2196F3;
+    border-color: #2196F3; }
+.ks-btn-primary:hover {
+    background: #39a1f4; }
+.ks-btn-primary:active {
+    background: #0d8aee; }
+
+.plain.ks-btn-primary {
+    color: #2196F3;
+    border-color: #2196F3; }
+
+.ks-btn-success {
+    background: #4CAF50;
+    border-color: #4CAF50; }
+.ks-btn-success:hover {
+    background: #5cb860; }
+.ks-btn-success:active {
+    background: #449d48; }
+
+.plain.ks-btn-success {
+    color: #4CAF50;
+    border-color: #4CAF50; }
+
+.ks-btn-warning {
+    background: #FF5722;
+    border-color: #FF5722; }
+.ks-btn-warning:hover {
+    background: #ff6a3c; }
+.ks-btn-warning:active {
+    background: #ff4409; }
+
+.plain.ks-btn-warning {
+    color: #FF5722;
+    border-color: #FF5722; }
+
+.ks-btn-info {
+    background: #00BCD4;
+    border-color: #00BCD4; }
+.ks-btn-info:hover {
+    background: #00d3ee; }
+.ks-btn-info:active {
+    background: #00a5bb; }
+
+.plain.ks-btn-info {
+    color: #00BCD4;
+    border-color: #00BCD4; }
+
+.ks-btn-default {
+    background: #fcfcfc;
+    border-color: #fcfcfc; }
+.ks-btn-default:hover {
+    background: white; }
+.ks-btn-default:active {
+    background: #efefef; }
+
+.plain.ks-btn-default {
+    color: #fcfcfc;
+    border-color: #fcfcfc; }
+
+.ks-btn-default {
+    color: #777;
+    border-color: #c8c8c8; }
+.ks-btn-default:hover {
+    color: #444; }
+
+/* table基础样式 */
+.table-striped table td, .multiple-table > table td, .table-striped table th {
+    padding: 10px 20px;
+    border: 0;
+    line-height: 1.7em; }
+
+.table-striped table td, .multiple-table > table td {
+    border-bottom: 1px solid #e9e9e9;
+    vertical-align: top; }
+.table-striped table td a, .multiple-table > table td a {
+    color: #2196F3;
+    cursor: pointer; }
+.table-striped table td i, .multiple-table > table td i {
+    padding-right: 10px; }
+
+.table-striped table {
+    width: 100%;
+    white-space: nowrap; }
+.table-striped table th {
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #e9e9e9;
+    font-weight: bold;
+    text-align: left; }
+
+.table-striped {
+    overflow-y: hidden;
+    margin: 0 -20px;
+    margin-bottom: 20px; }
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc; }
+
+.ks-search-criteria {
+    padding-bottom: 20px;
+    align-items: flex-end; }
+.ks-search-criteria > .right {
+    flex: 1;
+    justify-content: flex-end;
+    flex-wrap: wrap; }
+.ks-search-criteria > .right > div {
+    margin-top: 20px; }
+.ks-search-criteria > .right > div span {
+    margin-right: 10px; }
+.ks-search-criteria > .right > div + div {
+    margin-left: 20px; }
+.ks-search-criteria > .right > div > .inline-box {
+    display: inline-table; }
+.ks-search-criteria + .ks-search-criteria {
+    margin-top: -20px; }
+
+.ks-app, .ks-app .ks-header, .ks-app .ks-center, .ks-app .ks-content, .ks-app .ks-footer, .ks-form-group, .has-error, .ks-search-criteria, .ks-search-criteria > .right {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+
+.ks-app .ks-content, .ks-app .ks-content .ks-container-fluid, .ks-app .ks-footer .company, .ks-form-group input, .ks-form-group textarea, .ks-form-group .flex-box, .has-error, .has-error input {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+
+.multiple-table {
+    overflow-y: hidden;
+    margin: 0 -20px;
+    margin-bottom: 20px; }
+.multiple-table > table {
+    width: 100%;
+    white-space: nowrap; }
+.multiple-table > table thead {
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #e9e9e9; }
+.multiple-table > table thead div {
+    border-bottom: 1px solid #999;
+    margin-right: -20px; }
+.multiple-table > table th {
+    font-weight: bold;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 12px; }
+.multiple-table tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc; }
