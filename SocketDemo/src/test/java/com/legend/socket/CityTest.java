@@ -1,4 +1,4 @@
-package com.legend.test;
+package com.legend.socket;
 
 import com.alibaba.fastjson.JSONObject;
 import com.legend.Application;
@@ -28,11 +28,11 @@ public class CityTest {
     public void getCityId(){
 
         String json = JSONObject.toJSONString( basCityService.list(null));
-        System.out.println("******************************test start***********************************");
+        System.out.println("******************************socket start***********************************");
 
         System.out.println("测试结果--------->" + json);
 
-        System.out.println("******************************test end*************************************");
+        System.out.println("******************************socket end*************************************");
     }
 
 }

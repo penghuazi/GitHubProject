@@ -1103,7 +1103,7 @@
         /**
          * Detecting whether the value of an element that matches a rule
          *
-         * @method test
+         * @method socket
          * @param {Element} el - input element
          * @param {String} rule - rule name
          */

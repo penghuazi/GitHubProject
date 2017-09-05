@@ -1,17 +1,27 @@
-package com.legend.test;
+package com.legend.socket;
 
 /**
  * Created by dell-pc on 2017/9/3.
  */
-import java.io.BufferedReader;
+import org.springframework.stereotype.Component;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+@Component
 public class Server {
-    public static final int PORT = 12345;//监听的端口号
+    public static final int SOCKET_PORT  =12345;//监听的端口号
+    static {
+        System.out.println("服务器启动...\n"+SOCKET_PORT);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Server server = new Server();
+                server.init();
+            }
+        }).start();
+    }
 
     public static void main(String[] args) {
         System.out.println("服务器启动...\n");
@@ -21,7 +31,7 @@ public class Server {
 
     public void init() {
         try {
-            ServerSocket serverSocket = new ServerSocket(PORT);
+            ServerSocket serverSocket = new ServerSocket(SOCKET_PORT);
             while (true) {
                 // 一旦有堵塞, 则表示服务器与客户端获得了连接
                 Socket client = serverSocket.accept();

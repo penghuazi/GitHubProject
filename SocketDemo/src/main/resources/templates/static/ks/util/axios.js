@@ -132,7 +132,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is an Array
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is an Array, otherwise false
      */
     function isArray(val) {
@@ -142,7 +142,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is an ArrayBuffer
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is an ArrayBuffer, otherwise false
      */
     function isArrayBuffer(val) {
@@ -152,7 +152,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a FormData
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is an FormData, otherwise false
      */
     function isFormData(val) {
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a view on an ArrayBuffer
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
      */
     function isArrayBufferView(val) {
@@ -178,7 +178,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a String
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a String, otherwise false
      */
     function isString(val) {
@@ -188,7 +188,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a Number
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a Number, otherwise false
      */
     function isNumber(val) {
@@ -198,7 +198,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is undefined
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if the value is undefined, otherwise false
      */
     function isUndefined(val) {
@@ -208,7 +208,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is an Object
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is an Object, otherwise false
      */
     function isObject(val) {
@@ -218,7 +218,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a Date
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a Date, otherwise false
      */
     function isDate(val) {
@@ -228,7 +228,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a File
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a File, otherwise false
      */
     function isFile(val) {
@@ -238,7 +238,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a Blob
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a Blob, otherwise false
      */
     function isBlob(val) {
@@ -248,7 +248,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a Function
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a Function, otherwise false
      */
     function isFunction(val) {
@@ -258,7 +258,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a Stream
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a Stream, otherwise false
      */
     function isStream(val) {
@@ -268,7 +268,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determine if a value is a URLSearchParams object
      *
-     * @param {Object} val The value to test
+     * @param {Object} val The value to socket
      * @returns {boolean} True if value is a URLSearchParams object, otherwise false
      */
     function isURLSearchParams(val) {
@@ -1035,7 +1035,7 @@ return /******/ (function(modules) { // webpackBootstrap
     module.exports = (
       utils.isStandardBrowserEnv() ?
     
-      // Standard browser envs have full support of the APIs needed to test
+      // Standard browser envs have full support of the APIs needed to socket
       // whether the request URL is of the same origin as current location.
       (function standardBrowserEnv() {
         var msie = /(msie|trident)/i.test(navigator.userAgent);
@@ -1079,7 +1079,7 @@ return /******/ (function(modules) { // webpackBootstrap
         /**
         * Determine if a URL shares the same origin as the current location
         *
-        * @param {String} requestURL The URL to test
+        * @param {String} requestURL The URL to socket
         * @returns {boolean} True if URL shares the same origin, otherwise false
         */
         return function isURLSameOrigin(requestURL) {
@@ -1388,7 +1388,7 @@ return /******/ (function(modules) { // webpackBootstrap
     /**
      * Determines whether the specified URL is absolute
      *
-     * @param {string} url The URL to test
+     * @param {string} url The URL to socket
      * @returns {boolean} True if the specified URL is absolute, otherwise false
      */
     module.exports = function isAbsoluteURL(url) {
