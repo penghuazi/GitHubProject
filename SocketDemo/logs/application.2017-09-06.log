@@ -1,0 +1,230 @@
+2017-09-06 09:07:27.343 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 6316 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:07:27.371 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:07:28.524 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:07:35.088 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:07:39.429 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 13.209 seconds (JVM running for 15.292)
+2017-09-06 09:08:14.138 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 17764 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:08:14.143 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:08:15.013 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:08:19.401 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:08:23.717 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 10.236 seconds (JVM running for 12.267)
+2017-09-06 09:12:43.230 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 17888 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:12:43.236 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:12:44.062 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:12:48.544 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:12:53.267 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 10.91 seconds (JVM running for 12.897)
+2017-09-06 09:20:29.978 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 1280 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:20:29.985 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:20:30.892 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:20:35.113 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:20:36.290 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:20:36.318 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:20:36.349 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:20:40.339 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 11.038 seconds (JVM running for 13.46)
+2017-09-06 09:20:40.492 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:20:40.493 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:20:40.500 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:20:40.501 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:20:40.502 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 10(Integer)
+2017-09-06 09:20:40.511 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:35:04.486 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 11840 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:35:04.531 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:35:05.931 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:35:09.778 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:35:10.705 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:35:10.726 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:35:10.753 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:35:14.525 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 10.706 seconds (JVM running for 12.846)
+2017-09-06 09:35:14.661 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:35:14.666 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:35:14.670 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:35:14.671 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:35:14.688 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 09:35:14.692 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:38:12.438 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 16928 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:38:12.448 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:38:13.622 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:38:17.547 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:38:18.507 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:38:18.532 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:38:18.569 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:38:22.139 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 10.379 seconds (JVM running for 12.607)
+2017-09-06 09:38:22.378 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:38:22.378 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:38:22.383 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:38:22.386 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:38:22.403 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 09:38:22.420 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:38:58.585 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 16668 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:38:58.591 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:38:59.426 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:39:03.541 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:39:04.508 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:39:04.538 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:39:04.566 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:39:07.951 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 10.08 seconds (JVM running for 12.115)
+2017-09-06 09:39:08.122 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:39:08.123 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:39:08.126 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:39:08.127 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:39:08.128 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 09:39:08.136 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:43:44.128 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 14808 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:43:44.135 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:43:44.992 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:43:49.169 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:43:50.236 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:43:50.264 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:43:50.300 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:43:53.951 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 10.504 seconds (JVM running for 12.511)
+2017-09-06 09:43:54.134 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:43:54.135 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:43:54.138 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:43:54.139 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:43:54.140 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 09:43:54.155 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:45:26.662 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 15944 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:45:26.671 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:45:27.863 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:45:31.973 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:45:47.019 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:45:47.299 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:45:47.593 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:46:01.304 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 35.615 seconds (JVM running for 38.02)
+2017-09-06 09:46:36.279 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:46:36.280 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:46:36.282 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:46:43.112 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:46:43.113 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 09:46:43.122 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:49:00.413 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 1996 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:49:00.418 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:49:01.308 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:49:07.078 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:49:10.320 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:49:10.352 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:49:10.377 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:49:14.953 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 15.343 seconds (JVM running for 17.62)
+2017-09-06 09:49:19.697 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:49:19.698 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:49:19.700 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:49:54.024 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:49:54.026 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 09:49:54.027 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:52:48.812 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 12836 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:52:48.833 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:52:49.840 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:52:54.556 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:52:58.690 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:52:58.726 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:52:58.747 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:53:03.651 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 15.801 seconds (JVM running for 18.152)
+2017-09-06 09:56:40.917 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:56:40.918 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:56:40.920 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:57:52.208 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:57:52.209 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 09:57:52.210 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:58:05.116 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 11020 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:58:05.123 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:58:05.912 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:58:09.917 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:58:10.924 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:58:10.953 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:58:10.976 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:58:14.769 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 10.426 seconds (JVM running for 12.608)
+2017-09-06 09:58:14.937 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 09:58:14.938 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 09:58:14.939 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 09:58:14.943 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 09:58:14.947 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 09:58:14.950 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 09:59:06.343 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 3012 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 09:59:06.351 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 09:59:07.308 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 09:59:11.622 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 09:59:15.693 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 09:59:15.719 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 09:59:15.738 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 09:59:20.243 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 14.588 seconds (JVM running for 16.817)
+2017-09-06 10:01:03.707 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 10:01:03.709 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 10:01:03.710 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 10:02:56.056 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 8960 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 10:02:56.079 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 10:02:57.247 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 10:03:01.945 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 10:03:05.910 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 10:03:05.942 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 10:03:05.967 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 10:03:10.966 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 15.663 seconds (JVM running for 18.049)
+2017-09-06 10:03:59.702 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 10:03:59.703 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 10:03:59.705 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 10:24:28.876 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 16716 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 10:24:28.881 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 10:24:29.684 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 10:24:32.853 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 10:24:32.854 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 10:24:32.857 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 10:24:34.498 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 10:24:35.046 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id, city_code, city_name, zip_code, province_id from bas_city limit ?,? 
+2017-09-06 10:24:35.048 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 10:24:35.053 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 10:24:45.621 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 9088 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 10:24:45.626 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 10:24:46.523 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 10:24:50.881 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 10:24:55.386 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 10.46 seconds (JVM running for 12.394)
+2017-09-06 10:26:33.677 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 5308 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 10:26:33.684 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 10:26:34.772 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 10:26:38.757 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 10:26:43.903 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 11.195 seconds (JVM running for 13.78)
+2017-09-06 10:29:12.156 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 19040 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 10:29:12.161 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 10:29:13.336 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 10:29:18.345 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 10:29:21.825 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 10:29:21.849 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 10:29:21.871 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 10:29:26.469 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 15.241 seconds (JVM running for 17.537)
+2017-09-06 10:29:31.426 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==>  Preparing: SELECT COUNT(*) FROM bas_city 
+2017-09-06 10:29:31.426 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): ==> Parameters: 
+2017-09-06 10:29:31.428 [main] DEBUG d.c.legend.dao.BasCityMapper.selectByCondition_PageHelper_Count(145): <==      Total: 1
+2017-09-06 10:29:32.337 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==>  Preparing: select id,city_code as cityCode ,city_name as cityName,zip_code as zipCode,province_id as provinceId from bas_city limit ?,? 
+2017-09-06 10:29:32.338 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): ==> Parameters: 0(Integer), 15(Integer)
+2017-09-06 10:29:32.342 [main] DEBUG dao.com.legend.dao.BasCityMapper.selectByCondition_PageHelper(145): <==      Total: 3
+2017-09-06 23:41:59.018 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 16720 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 23:41:59.027 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 23:41:59.783 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 23:42:03.145 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 23:42:04.317 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 23:42:04.348 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 23:42:04.374 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 23:42:07.292 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 8.789 seconds (JVM running for 10.409)
+2017-09-06 23:42:07.425 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where id = ? 
+2017-09-06 23:42:07.426 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): ==> Parameters: 1(Integer)
+2017-09-06 23:42:07.465 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): <==      Total: 0
+2017-09-06 23:44:48.559 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 19316 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 23:44:48.577 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 23:44:49.328 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 23:44:53.006 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 23:44:53.831 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 23:44:53.849 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 23:44:53.865 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 23:44:56.128 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 8.044 seconds (JVM running for 9.499)
+2017-09-06 23:44:56.209 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where id = ? 
+2017-09-06 23:44:56.209 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): ==> Parameters: 1(Integer)
+2017-09-06 23:44:56.212 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): <==      Total: 0
+2017-09-06 23:48:45.670 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 17724 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-06 23:48:45.678 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-06 23:48:46.343 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-06 23:48:50.107 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-06 23:48:51.120 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-06 23:48:51.140 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-06 23:48:51.159 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
+2017-09-06 23:48:53.804 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 8.703 seconds (JVM running for 10.755)
+2017-09-06 23:48:53.909 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where id = ? 
+2017-09-06 23:48:53.910 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): ==> Parameters: 1(Integer)
+2017-09-06 23:48:53.914 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): <==      Total: 0

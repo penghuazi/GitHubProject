@@ -41,14 +41,14 @@ public class SysDictionaryService {
 		String result = null;
 		for (SysDictionary dictionary : dictionaryList) {
 			if (paramId.intValue() == dictionary.getParamId()) {
-				result = StringUtils.string2HexString(dictionary.getParam1())+
-						StringUtils.string2HexString(dictionary.getParam2())+
-						StringUtils.string2HexString(dictionary.getParam3())+
-						StringUtils.string2HexString(dictionary.getParam4());
+				result = "0x"+dictionary.getParam1()+
+						dictionary.getParam2()+
+						dictionary.getParam3()+
+						dictionary.getParam4();
 				return result;
 			}
 		}
-		return null;
+		return result;
 	}
 
 	//先从静态中获取,如果没有再查询一遍
@@ -65,10 +65,10 @@ public class SysDictionaryService {
 			String result = null;
 			for (SysDictionary dictionary : dictionaryList) {
 				if (paramId.intValue() == dictionary.getParamId()) {
-					result = StringUtils.string2HexString(dictionary.getParam1())+
-							StringUtils.string2HexString(dictionary.getParam2())+
-							StringUtils.string2HexString(dictionary.getParam3())+
-							StringUtils.string2HexString(dictionary.getParam4());
+					result = "0x"+dictionary.getParam1()+
+							dictionary.getParam2()+
+							dictionary.getParam3()+
+							dictionary.getParam4();
 					return result;
 				}
 			}

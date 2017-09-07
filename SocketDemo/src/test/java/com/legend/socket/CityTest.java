@@ -2,8 +2,11 @@ package com.legend.socket;
 
 import com.alibaba.fastjson.JSONObject;
 import com.legend.Application;
+import com.legend.dao.AmmeterDeviceMapper;
 import com.legend.dao.BasCityMapper;
 import com.legend.service.BasCityService;
+import com.legend.service.SysDictionaryService;
+import com.legend.utils.StringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +27,16 @@ public class CityTest {
 
     @Autowired
     public BasCityService basCityService;
+
+    @Autowired
+    private AmmeterDeviceMapper ammeterDeviceMapper;
+
     @Test
     public void getCityId(){
 
-        String json = JSONObject.toJSONString( basCityService.list(null));
+        System.out.println(SysDictionaryService.getStaticValue(1));
+
+        String json = JSONObject.toJSONString( ammeterDeviceMapper.selectByPrimaryKey(1));
         System.out.println("******************************socket start***********************************");
 
         System.out.println("测试结果--------->" + json);

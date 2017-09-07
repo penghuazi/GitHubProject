@@ -17,9 +17,9 @@
     from bas_city
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <select id="selectByCondition" resultMap="BaseResultMap">
+  <select id="selectByCondition" resultType="java.util.Map">
     select
-    <include refid="Base_Column_List" />
+    id,city_code as cityCode ,city_name as cityName,zip_code as zipCode,province_id as provinceId
     from bas_city
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >

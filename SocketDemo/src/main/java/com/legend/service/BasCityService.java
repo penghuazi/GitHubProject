@@ -1,8 +1,9 @@
 package com.legend.service;
 
-import com.github.pagehelper.PageHelper;
 import com.legend.dao.BasCityMapper;
 import com.legend.dao.domain.BasCity;
+import com.legend.page.Page;
+import com.legend.page.PageHelper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,9 +20,9 @@ public class BasCityService {
     private BasCityMapper basCityMapper;
 
 
-    public List<BasCity> list(BasCity basCity) {
-        PageHelper.startPage(2,2);
-        List<BasCity> list = basCityMapper.selectByCondition();
+    public Page<?> list(BasCity basCity) {
+        PageHelper.startPage(2,15);
+        Page<?> list = basCityMapper.selectByCondition();
 
 //        BeanUtils.copyProperties(list2,list);
         return list;

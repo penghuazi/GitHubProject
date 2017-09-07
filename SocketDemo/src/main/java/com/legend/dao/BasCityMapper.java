@@ -4,6 +4,7 @@ package com.legend.dao;
 
 
 import com.legend.dao.domain.BasCity;
+import com.legend.page.Page;
 
 import java.util.List;
 
@@ -20,5 +21,5 @@ public interface BasCityMapper {
 
     int updateByPrimaryKey(BasCity record);
 
-    List<BasCity> selectByCondition();
+    Page<?> selectByCondition();
 }
