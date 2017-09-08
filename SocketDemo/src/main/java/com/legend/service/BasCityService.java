@@ -1,10 +1,9 @@
 package com.legend.service;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.legend.dao.BasCityMapper;
 import com.legend.dao.domain.BasCity;
-import com.legend.page.Page;
-import com.legend.page.PageHelper;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

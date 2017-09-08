@@ -31,6 +31,21 @@
     from ammeter_device
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="selectByCondition" resultMap="BaseResultMap" >
+
+    select
+    <include refid="Base_Column_List" />
+    from ammeter_device
+
+  </select>
+  <select id="selectByImsiKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    <include refid="Base_Column_List" />
+    from ammeter_device
+    where imsi = #{imsi,jdbcType=VARCHAR}
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from ammeter_device
     where id = #{id,jdbcType=INTEGER}

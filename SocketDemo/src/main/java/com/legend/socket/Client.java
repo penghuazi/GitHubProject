@@ -3,6 +3,8 @@ package com.legend.socket;
 /**
  * Created by dell-pc on 2017/9/3.
  */
+import com.legend.service.SysDictionaryService;
+
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -14,25 +16,35 @@ public class Client {
     public static final String IP_ADDR = "localhost";//服务器地址
     public static final int SOCKET_PORT = 12345;//服务器端口号
 
+    public static final String[]  StringArray ={"0x180001","0x180002","0x180003","0x180003","0x180005","0x180006","0x180007","0x180008","0x180009","OK"};
+
     public static void main(String[] args) {
         System.out.println("客户端启动...");
         System.out.println("当接收到服务器端字符为 \"OK\" 的时候, 客户端将终止\n");
+        int attemptNumber = 1; //尝试重新连接的次数
+        int number = 0;
         while (true) {
             Socket socket = null;
             try {
                 //创建一个流套接字并将其连接到指定主机上的指定端口号
                 socket = new Socket(IP_ADDR, SOCKET_PORT);
-
+                System.out.println("開始回話 "+number);
                 //读取服务器端数据
                 DataInputStream input = new DataInputStream(socket.getInputStream());
                 //向服务器端发送数据
                 DataOutputStream out = new DataOutputStream(socket.getOutputStream());
-                System.out.print("请输入: \t");
-                String str = new BufferedReader(new InputStreamReader(System.in)).readLine();
+//                System.out.print("请输入: \t");
+//                String str = new BufferedReader(new InputStreamReader(System.in)).readLine();
+                if(number >10){
+                    break;
+                }
+                String str = StringArray[number];
+                number ++;
                 out.writeUTF(str);
-
+                attemptNumber = 1;
                 String ret = input.readUTF();
                 System.out.println("服务器端返回过来的是: " + ret);
+
                 // 如接收到 "OK" 则断开连接
                 if ("OK".equals(ret)) {
                     System.out.println("客户端将关闭连接");
@@ -43,7 +55,17 @@ public class Client {
                 out.close();
                 input.close();
             } catch (Exception e) {
+                if(attemptNumber > 60){
+                    System.out.println("尝试连接 30秒,无法连接 ，主动关闭连接!");
+                    break;
+                }
                 System.out.println("客户端异常:" + e.getMessage());
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e1) {
+                    e1.printStackTrace();
+                }
+                attemptNumber++;
             } finally {
                 if (socket != null) {
                     try {
@@ -57,3 +79,5 @@ public class Client {
         }
     }
 }
+
+

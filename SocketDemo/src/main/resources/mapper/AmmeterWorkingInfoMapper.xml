@@ -29,6 +29,13 @@
     from ammeter_working_info
     where id = #{id,jdbcType=INTEGER}
   </select>
+
+  <select id="selectByAmmeterId" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from ammeter_working_info
+    where ammeter_id = #{ammeterId,jdbcType=INTEGER}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from ammeter_working_info
     where id = #{id,jdbcType=INTEGER}
@@ -209,5 +216,9 @@
       reverse_active_power = #{reverseActivePower,jdbcType=VARCHAR},
       status = #{status,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByAmmeterId" parameterType="java.lang.Integer">
+    update ammeter_working_info set status = #{status,jdbcType=INTEGER}
+    where ammeter_id = #{ammeterId,jdbcType=INTEGER}
   </update>
 </mapper>

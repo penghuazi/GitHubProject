@@ -1,6 +1,7 @@
 package com.legend.dao;
 
 import com.legend.dao.domain.AmmeterWorkingInfo;
+import org.apache.ibatis.annotations.Param;
 
 public interface AmmeterWorkingInfoMapper {
     int deleteByPrimaryKey(Integer id);
@@ -11,7 +12,11 @@ public interface AmmeterWorkingInfoMapper {
 
     AmmeterWorkingInfo selectByPrimaryKey(Integer id);
 
+    AmmeterWorkingInfo selectByAmmeterId(Integer ammeterId);
+
     int updateByPrimaryKeySelective(AmmeterWorkingInfo record);
+
+    int updateByAmmeterId(@Param("ammeterId") Integer ammeterId, @Param("status") Integer status);
 
     int updateByPrimaryKey(AmmeterWorkingInfo record);
 }

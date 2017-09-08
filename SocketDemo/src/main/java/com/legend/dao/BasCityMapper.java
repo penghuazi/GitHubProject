@@ -3,8 +3,8 @@ package com.legend.dao;
 
 
 
+import com.github.pagehelper.Page;
 import com.legend.dao.domain.BasCity;
-import com.legend.page.Page;
 
 import java.util.List;
 

@@ -1,18 +1,43 @@
-2017-09-07 09:18:15.370 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 12364 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
-2017-09-07 09:18:15.373 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
-2017-09-07 09:18:16.295 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
-2017-09-07 09:18:20.566 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @7731ms to org.eclipse.jetty.util.log.Slf4jLog
-2017-09-07 09:18:21.917 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
-2017-09-07 09:18:22.168 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
-2017-09-07 09:18:22.168 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
-2017-09-07 09:18:22.171 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 660000ms
-2017-09-07 09:18:22.175 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
-2017-09-07 09:18:22.433 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@28d79cba{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.506401654488341839.8088/],AVAILABLE}
-2017-09-07 09:18:22.434 [main] INFO org.eclipse.jetty.server.Server(444): Started @9599ms
-2017-09-07 09:18:22.534 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
-2017-09-07 09:18:23.573 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
-2017-09-07 09:18:23.598 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
-2017-09-07 09:18:23.620 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 28
-2017-09-07 09:18:25.767 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
-2017-09-07 09:18:25.883 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@782168b7{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
-2017-09-07 09:18:25.896 [main] INFO com.legend.Application(87): Started Application in 11.865 seconds (JVM running for 13.061)
+2017-09-08 00:02:13.042 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 18620 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-08 00:02:13.047 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-08 00:02:13.687 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-08 00:02:18.465 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @7205ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-08 00:02:19.677 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-08 00:02:19.809 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-08 00:02:19.809 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-08 00:02:19.811 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 660000ms
+2017-09-08 00:02:19.817 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-08 00:02:20.052 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@4a901445{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.3704026348093498558.8088/],AVAILABLE}
+2017-09-08 00:02:20.053 [main] INFO org.eclipse.jetty.server.Server(444): Started @8793ms
+2017-09-08 00:02:20.151 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-08 00:02:20.665 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-08 00:02:21.114 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-08 00:02:21.138 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-08 00:02:21.155 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-08 00:02:24.159 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-08 00:02:24.295 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@67f77f6e{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-08 00:02:24.307 [main] INFO com.legend.Application(87): Started Application in 12.144 seconds (JVM running for 13.047)
+2017-09-08 00:02:27.787 [qtp1407713529-21] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByCondition(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device 
+2017-09-08 00:02:27.788 [qtp1407713529-21] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByCondition(145): ==> Parameters: 
+2017-09-08 00:02:27.789 [qtp1407713529-21] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByCondition(145): <==      Total: 1
+2017-09-08 00:05:23.320 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 1060 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-08 00:05:23.324 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-08 00:05:24.003 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-08 00:05:28.250 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @6676ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-08 00:05:29.669 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-08 00:05:29.799 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-08 00:05:29.800 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-08 00:05:29.804 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 600000ms
+2017-09-08 00:05:29.811 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-08 00:05:30.026 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@21a02556{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.1885150909924031051.8088/],AVAILABLE}
+2017-09-08 00:05:30.027 [main] INFO org.eclipse.jetty.server.Server(444): Started @8455ms
+2017-09-08 00:05:30.149 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-08 00:05:30.714 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-08 00:05:31.150 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-08 00:05:31.169 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-08 00:05:31.186 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-08 00:05:33.212 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-08 00:05:33.293 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@3c8a7e38{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-08 00:05:33.300 [main] INFO com.legend.Application(87): Started Application in 10.959 seconds (JVM running for 11.728)
+2017-09-08 00:11:56.694 [qtp46852536-24] WARN org.springframework.web.servlet.PageNotFound(87): Request method 'GET' not supported
+2017-09-08 00:16:23.954 [qtp46852536-24] WARN org.springframework.web.servlet.PageNotFound(87): Request method 'GET' not supported

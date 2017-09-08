@@ -37,6 +37,16 @@ public class AmmeterDevice {
 
     private String hardwareNo;
 
+    private Integer sendStatus;
+
+    public Integer getSendStatus() {
+        return sendStatus;
+    }
+
+    public void setSendStatus(Integer sendStatus) {
+        this.sendStatus = sendStatus;
+    }
+
     public Integer getId() {
         return id;
     }

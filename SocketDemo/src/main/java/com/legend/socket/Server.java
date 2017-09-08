@@ -13,13 +13,12 @@ import java.net.Socket;
 public class Server {
     public static final int SOCKET_PORT  =12345;//监听的端口号
     static {
-        System.out.println("服务器启动...\n"+SOCKET_PORT);
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
+        System.out.println("Socket 服务器启动...\n"+SOCKET_PORT);
+        new Thread(()->
+        {
                 Server server = new Server();
                 server.init();
-            }
+
         }).start();
     }
 
@@ -53,6 +52,7 @@ public class Server {
 
         public void run() {
             try {
+                System.out.println("Ip:"+socket.getInetAddress()+"");
                 // 读取客户端数据
                 DataInputStream input = new DataInputStream(socket.getInputStream());
                 String clientInputStr = input.readUTF();//这里要注意和客户端输出流的写方法对应,否则会抛 EOFException
@@ -67,8 +67,10 @@ public class Server {
 //                out.writeUTF(s);
                 if("OK".equals(clientInputStr)){
                     out.writeUTF("OK");
-                }else{
+                }else if("0x180002".equals(clientInputStr)){
                     out.writeUTF("Test Jianhua");
+                }else{
+                    out.writeUTF("111");
                 }
 
                 out.close();
