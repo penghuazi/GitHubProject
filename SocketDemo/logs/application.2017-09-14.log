@@ -1,0 +1,663 @@
+2017-09-14 00:00:48.389 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:00:48.393 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:00:48.421 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:01:11.288 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:01:11.309 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:01:11.340 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:01:25.440 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:01:25.442 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:01:25.758 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:11:20.078 [Thread-18] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:11:20.078 [Thread-18] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:11:20.087 [Thread-19] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:11:27.708 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 20124 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 00:11:27.712 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-14 00:11:28.884 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 00:11:31.994 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @6052ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-14 00:11:32.498 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-14 00:11:32.665 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-14 00:11:32.665 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-14 00:11:32.669 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 660000ms
+2017-09-14 00:11:32.675 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-14 00:11:32.890 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@5a2bd7c8{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.4039242397424946906.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],AVAILABLE}
+2017-09-14 00:11:32.890 [main] INFO org.eclipse.jetty.server.Server(444): Started @6949ms
+2017-09-14 00:11:33.000 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 00:11:33.497 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 00:11:33.915 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 00:11:33.937 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 00:11:33.955 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 00:11:34.045 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 00:11:36.825 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 00:11:36.903 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 00:11:37.005 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 00:11:37.395 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 00:11:37.509 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@7ca8d498{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-14 00:11:37.521 [main] INFO com.legend.Application(87): Started Application in 10.644 seconds (JVM running for 11.58)
+2017-09-14 00:11:43.343 [Thread-18] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:12:04.487 [Thread-18] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:12:04.488 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:12:04.489 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:12:04.496 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:12:04.496 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:12:04.497 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:12:04.499 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:12:04.549 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:12:04.549 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:12:04.853 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:12:04.856 [Thread-18] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:12:04.856 [Thread-18] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:12:04.858 [Thread-19] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :2: 0x28002
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :3: 0x28003
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :4: 0x28004
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :5: 0x28005
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :6: 0x28006
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :7: 0x28007
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :8: 0x28008
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :9: 0x28009
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :10: 0x2800A
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :11: 0x2100
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :12: 0x2101
+2017-09-14 00:13:08.381 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :13: 0x4041
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :14: 0x4042
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :15: 0x4043
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :16: 0x4044
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :17: 0x4045
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :18: 0x4046
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :19: 0x4047
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :20: 0x4048
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :21: 0x4049
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :22: 0x4040A
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :23: 0x4040B
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :24: 0x4040C
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :25: 0x4040D
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :26: 0x48001
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :27: 0x48002
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :28: 0x48003
+2017-09-14 00:13:08.382 [Thread-19] INFO com.legend.service.AmmeterService(117): dictionary :29: 0x33333333
+2017-09-14 00:13:08.383 [Thread-19] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x2800001+120.223
+2017-09-14 00:13:08.383 [Thread-19] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:13:08.385 [Thread-20] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :2: 0x28002
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :3: 0x28003
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :4: 0x28004
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :5: 0x28005
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :6: 0x28006
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :7: 0x28007
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :8: 0x28008
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :9: 0x28009
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :10: 0x2800A
+2017-09-14 00:13:20.827 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :11: 0x2100
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :12: 0x2101
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :13: 0x4041
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :14: 0x4042
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :15: 0x4043
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :16: 0x4044
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :17: 0x4045
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :18: 0x4046
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :19: 0x4047
+2017-09-14 00:13:20.828 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :20: 0x4048
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :21: 0x4049
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :22: 0x4040A
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :23: 0x4040B
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :24: 0x4040C
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :25: 0x4040D
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :26: 0x48001
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :27: 0x48002
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :28: 0x48003
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.service.AmmeterService(117): dictionary :29: 0x33333333
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x2800001+120.223
+2017-09-14 00:13:20.829 [Thread-20] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:13:20.850 [Thread-21] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :2: 0x28002
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :3: 0x28003
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :4: 0x28004
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :5: 0x28005
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :6: 0x28006
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :7: 0x28007
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :8: 0x28008
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :9: 0x28009
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :10: 0x2800A
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :11: 0x2100
+2017-09-14 00:13:23.463 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :12: 0x2101
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :13: 0x4041
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :14: 0x4042
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :15: 0x4043
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :16: 0x4044
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :17: 0x4045
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :18: 0x4046
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :19: 0x4047
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :20: 0x4048
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :21: 0x4049
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :22: 0x4040A
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :23: 0x4040B
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :24: 0x4040C
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :25: 0x4040D
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :26: 0x48001
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :27: 0x48002
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :28: 0x48003
+2017-09-14 00:13:23.464 [Thread-21] INFO com.legend.service.AmmeterService(117): dictionary :29: 0x33333333
+2017-09-14 00:13:23.465 [Thread-21] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x2800001+120.223
+2017-09-14 00:13:23.465 [Thread-21] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:13:23.468 [Thread-22] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:13:29.037 [Thread-22] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:13:29.037 [Thread-22] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:13:29.038 [Thread-22] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:13:29.040 [Thread-22] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:13:29.041 [Thread-22] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:13:29.042 [Thread-22] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:13:29.043 [Thread-22] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:13:29.044 [Thread-22] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:13:29.044 [Thread-22] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:13:29.090 [Thread-22] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:13:29.090 [Thread-22] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:13:29.090 [Thread-22] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:13:29.091 [Thread-23] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:13:38.939 [Thread-23] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:13:38.939 [Thread-23] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:13:38.940 [Thread-23] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:13:38.941 [Thread-23] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:13:38.942 [Thread-23] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:13:38.943 [Thread-23] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:13:38.944 [Thread-23] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:13:38.945 [Thread-23] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:13:38.945 [Thread-23] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:13:39.001 [Thread-23] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:13:39.001 [Thread-23] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:13:39.001 [Thread-23] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:13:39.003 [Thread-24] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:13:50.191 [Thread-24] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:13:50.191 [Thread-24] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:13:50.192 [Thread-24] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:13:50.194 [Thread-24] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:13:50.194 [Thread-24] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:13:50.194 [Thread-24] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:13:50.197 [Thread-24] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:13:50.197 [Thread-24] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:13:50.198 [Thread-24] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:13:50.245 [Thread-24] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:13:50.246 [Thread-24] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:13:50.246 [Thread-24] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:13:50.247 [Thread-25] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:14:00.594 [Thread-25] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:14:00.594 [Thread-25] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:14:00.595 [Thread-25] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:14:00.596 [Thread-25] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:14:00.596 [Thread-25] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:14:00.597 [Thread-25] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:14:00.598 [Thread-25] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:14:00.601 [Thread-25] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:14:00.602 [Thread-25] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:14:00.646 [Thread-25] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:14:00.647 [Thread-25] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:14:00.647 [Thread-25] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:14:00.648 [Thread-26] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:14:20.568 [Thread-26] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:14:20.569 [Thread-26] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:14:20.569 [Thread-26] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:14:20.570 [Thread-26] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:14:20.571 [Thread-26] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:14:20.571 [Thread-26] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:14:20.573 [Thread-26] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:14:20.574 [Thread-26] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:14:20.576 [Thread-26] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:14:20.625 [Thread-26] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:14:20.626 [Thread-26] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:14:20.626 [Thread-26] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:14:20.628 [Thread-27] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:14:35.564 [Thread-27] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:14:35.564 [Thread-27] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:14:35.565 [Thread-27] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:14:35.566 [Thread-27] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:14:35.566 [Thread-27] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:14:35.567 [Thread-27] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:14:35.568 [Thread-27] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:14:35.569 [Thread-27] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:14:35.570 [Thread-27] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:14:35.625 [Thread-27] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:14:35.626 [Thread-27] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:14:35.626 [Thread-27] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:14:35.628 [Thread-28] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:15:40.044 [Thread-28] INFO com.legend.service.AmmeterService(117): dictionary :1: 0x28001
+2017-09-14 00:15:40.045 [Thread-28] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 00:15:40.045 [Thread-28] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 460001357924680(String)
+2017-09-14 00:15:40.048 [Thread-28] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 00:15:40.050 [Thread-28] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 00:15:40.050 [Thread-28] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 4(Integer)
+2017-09-14 00:15:40.052 [Thread-28] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 00:15:40.053 [Thread-28] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 00:15:40.053 [Thread-28] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 120.223(String), 4(Integer)
+2017-09-14 00:15:40.117 [Thread-28] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 00:15:40.117 [Thread-28] INFO com.legend.socket.Server(107): 线程操作结束460001357924680+0x28001+120.223
+2017-09-14 00:15:40.117 [Thread-28] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:15:40.119 [Thread-29] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 00:28:47.134 [Thread-29] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 00:29:12.406 [main] INFO com.legend.socket.CityTest(48): Starting CityTest on DESKTOP-I05EV7F with PID 20996 (started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 00:29:12.411 [main] INFO com.legend.socket.CityTest(593): No active profile set, falling back to default profiles: default
+2017-09-14 00:29:13.109 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 00:29:16.254 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(440): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 00:29:16.953 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 00:29:17.324 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 00:29:17.348 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 00:29:17.371 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 00:29:17.538 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(467): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 00:29:21.057 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 00:29:21.110 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 00:29:21.127 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 00:29:21.461 [main] INFO com.legend.socket.CityTest(57): Started CityTest in 9.554 seconds (JVM running for 11.075)
+2017-09-14 00:29:21.589 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where id = ? 
+2017-09-14 00:29:21.589 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): ==> Parameters: 1(Integer)
+2017-09-14 00:29:21.601 [main] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByPrimaryKey(145): <==      Total: 1
+2017-09-14 22:37:49.390 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 8680 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 22:37:49.394 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-14 22:37:50.176 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 22:37:52.595 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @5548ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-14 22:37:53.400 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-14 22:37:53.582 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-14 22:37:53.582 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-14 22:37:53.586 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 600000ms
+2017-09-14 22:37:53.594 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-14 22:37:53.795 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@7efe7b87{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.101845441994028095.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],AVAILABLE}
+2017-09-14 22:37:53.796 [main] INFO org.eclipse.jetty.server.Server(444): Started @6748ms
+2017-09-14 22:37:53.926 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 22:37:54.568 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 22:37:55.282 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 22:37:55.307 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 22:37:55.326 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 22:37:55.419 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 22:37:57.963 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 22:37:57.998 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 22:37:58.011 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 22:37:58.243 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 22:37:58.306 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@ac20bb4{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-14 22:37:58.319 [main] INFO com.legend.Application(87): Started Application in 10.163 seconds (JVM running for 11.271)
+2017-09-14 22:40:12.558 [qtp1429133319-35] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 22:40:12.561 [qtp1429133319-35] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 22:40:12.570 [qtp1429133319-35] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 22:40:12.586 [qtp1429133319-35] WARN org.eclipse.jetty.server.HttpChannel(517): /ammeter/updateStatus
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:673)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:591)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException: null
+	at com.legend.service.AmmeterService.updateAmmeterStatus(AmmeterService.java:41)
+	at com.legend.service.AmmeterService$$FastClassBySpringCGLIB$$10d384e5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669)
+	at com.legend.service.AmmeterService$$EnhancerBySpringCGLIB$$25b28ee9.updateAmmeterStatus(<generated>)
+	at com.legend.controller.AmmeterController.updateAmmeterStatus(AmmeterController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 48 common frames omitted
+2017-09-14 22:42:57.315 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 11876 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 22:42:57.318 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-14 22:42:57.841 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 22:43:00.813 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @4809ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-14 22:43:01.529 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-14 22:43:01.701 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-14 22:43:01.701 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-14 22:43:01.704 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 660000ms
+2017-09-14 22:43:01.710 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-14 22:43:01.877 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6631cb64{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.3830658367038321276.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],AVAILABLE}
+2017-09-14 22:43:01.878 [main] INFO org.eclipse.jetty.server.Server(444): Started @5875ms
+2017-09-14 22:43:01.969 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 22:43:02.363 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 22:43:02.775 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 22:43:02.795 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 22:43:02.816 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 22:43:02.890 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 22:43:05.010 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 22:43:05.062 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 22:43:05.077 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 22:43:05.313 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 22:43:05.357 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@19962194{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-14 22:43:05.364 [main] INFO com.legend.Application(87): Started Application in 8.703 seconds (JVM running for 9.36)
+2017-09-14 22:43:11.985 [qtp836782867-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 22:43:11.987 [qtp836782867-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 22:43:11.990 [qtp836782867-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 22:43:11.998 [qtp836782867-18] WARN org.eclipse.jetty.server.HttpChannel(517): /ammeter/updateStatus
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:673)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:591)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException: null
+	at com.legend.service.AmmeterService.updateAmmeterStatus(AmmeterService.java:41)
+	at com.legend.service.AmmeterService$$FastClassBySpringCGLIB$$10d384e5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669)
+	at com.legend.service.AmmeterService$$EnhancerBySpringCGLIB$$ba1a5ac.updateAmmeterStatus(<generated>)
+	at com.legend.controller.AmmeterController.updateAmmeterStatus(AmmeterController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 48 common frames omitted
+2017-09-14 22:43:57.878 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 6164 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 22:43:57.881 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-14 22:43:58.470 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 22:44:01.578 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @4983ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-14 22:44:02.421 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-14 22:44:02.566 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-14 22:44:02.566 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-14 22:44:02.570 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 600000ms
+2017-09-14 22:44:02.577 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-14 22:44:02.764 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@7c1e32c9{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.7736010940036786480.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],AVAILABLE}
+2017-09-14 22:44:02.765 [main] INFO org.eclipse.jetty.server.Server(444): Started @6169ms
+2017-09-14 22:44:02.853 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 22:44:03.329 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 22:44:03.780 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 22:44:03.798 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 22:44:03.821 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 22:44:03.900 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 22:44:05.780 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 22:44:05.808 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 22:44:05.818 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 22:44:06.022 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 22:44:06.069 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@383864d5{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-14 22:44:06.076 [main] INFO com.legend.Application(87): Started Application in 8.823 seconds (JVM running for 9.481)
+2017-09-14 22:44:33.846 [qtp1810349933-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 22:44:33.847 [qtp1810349933-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 22:44:33.849 [qtp1810349933-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 22:44:33.852 [qtp1810349933-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.updateByAmmeterId(145): ==>  Preparing: update ammeter_working_info set status = ? where ammeter_id = ? 
+2017-09-14 22:44:33.852 [qtp1810349933-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.updateByAmmeterId(145): ==> Parameters: 3(Integer), 3(Integer)
+2017-09-14 22:44:33.910 [qtp1810349933-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.updateByAmmeterId(145): <==    Updates: 1
+2017-09-14 22:46:57.443 [Thread-18] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 22:47:43.595 [Thread-18] INFO com.legend.service.AmmeterService(128): dictionary :1: 0x28001
+2017-09-14 22:47:43.595 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 22:47:43.596 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 12345678902(String)
+2017-09-14 22:47:43.599 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 22:47:43.600 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 22:47:43.600 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 22:47:43.601 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 22:47:43.641 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 22:47:43.641 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 123.12(String), 3(Integer)
+2017-09-14 22:47:43.957 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 22:47:43.959 [Thread-18] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 22:47:44.466 [Thread-19] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 22:49:53.214 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 2240 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 22:49:53.243 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-14 22:49:53.782 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 22:49:56.669 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @6010ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-14 22:49:57.514 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-14 22:49:57.641 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-14 22:49:57.641 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-14 22:49:57.644 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 660000ms
+2017-09-14 22:49:57.651 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-14 22:49:57.867 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2ac519dc{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.4056811446933136896.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],AVAILABLE}
+2017-09-14 22:49:57.868 [main] INFO org.eclipse.jetty.server.Server(444): Started @7210ms
+2017-09-14 22:49:57.990 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 22:49:58.940 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 22:49:59.442 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 22:49:59.461 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 22:49:59.483 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 22:49:59.606 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 22:50:02.057 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 22:50:02.107 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 22:50:02.128 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 22:50:02.430 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 22:50:02.516 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@3d53e6f7{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-14 22:50:02.526 [main] INFO com.legend.Application(87): Started Application in 10.665 seconds (JVM running for 11.867)
+2017-09-14 22:50:30.718 [Thread-18] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 22:50:47.554 [Thread-18] INFO com.legend.service.AmmeterService(128): dictionary :1: 0x28001
+2017-09-14 22:50:47.555 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 22:50:47.555 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 12345678902(String)
+2017-09-14 22:50:47.562 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 22:50:47.564 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 22:50:47.564 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 22:50:47.569 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 22:50:47.621 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 22:50:47.621 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 121.1(String), 3(Integer)
+2017-09-14 22:50:47.932 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 22:52:15.733 [Thread-18] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 22:52:16.243 [Thread-19] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 22:52:25.731 [Thread-19] INFO com.legend.service.AmmeterService(128): dictionary :1: 0x28001
+2017-09-14 22:52:25.731 [Thread-19] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 22:52:25.732 [Thread-19] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 12345678902(String)
+2017-09-14 22:52:25.734 [Thread-19] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 22:52:25.735 [Thread-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 22:52:25.736 [Thread-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 22:52:25.738 [Thread-19] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 22:52:25.739 [Thread-19] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 22:52:25.739 [Thread-19] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 121.1(String), 3(Integer)
+2017-09-14 22:52:26.059 [Thread-19] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 22:53:01.824 [Thread-19] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 22:53:02.327 [Thread-20] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 22:54:10.213 [Thread-20] INFO com.legend.service.AmmeterService(128): dictionary :1: 0x28001
+2017-09-14 22:54:10.214 [Thread-20] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 22:54:10.215 [Thread-20] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 12345678902(String)
+2017-09-14 22:54:10.223 [Thread-20] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 22:54:10.225 [Thread-20] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 22:54:10.226 [Thread-20] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 22:54:10.227 [Thread-20] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 22:54:10.229 [Thread-20] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 22:54:10.230 [Thread-20] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 121.1(String), 3(Integer)
+2017-09-14 22:54:10.563 [Thread-20] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 22:59:51.012 [Thread-20] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 22:59:51.549 [Thread-21] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 23:00:04.054 [Thread-21] INFO com.legend.service.AmmeterService(128): dictionary :1: 0x28001
+2017-09-14 23:00:04.062 [Thread-21] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 23:00:04.067 [Thread-21] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 12345678902(String)
+2017-09-14 23:00:04.356 [Thread-21] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 23:00:04.358 [Thread-21] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 23:00:04.359 [Thread-21] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 23:00:04.361 [Thread-21] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 23:00:04.364 [Thread-21] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 23:00:04.364 [Thread-21] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 121.1(String), 3(Integer)
+2017-09-14 23:00:04.556 [Thread-21] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 23:00:41.690 [Thread-21] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 23:00:42.195 [Thread-22] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 23:01:17.675 [Thread-22] INFO com.legend.service.AmmeterService(128): dictionary :1: 0x28001
+2017-09-14 23:01:30.391 [Thread-22] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 23:01:30.395 [Thread-22] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 12345678902(String)
+2017-09-14 23:01:30.428 [Thread-22] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 23:01:39.071 [Thread-22] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 23:01:39.075 [Thread-22] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 23:01:39.099 [Thread-22] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 23:02:20.762 [Thread-22] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 23:02:20.783 [Thread-22] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 121.1(String), 3(Integer)
+2017-09-14 23:02:21.124 [Thread-22] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 23:06:29.307 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 9848 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 23:06:29.314 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-14 23:06:30.321 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 23:06:33.559 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @7061ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-14 23:06:34.215 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-14 23:06:34.512 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-14 23:06:34.512 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-14 23:06:34.516 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 600000ms
+2017-09-14 23:06:34.523 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-14 23:06:34.690 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6bbab114{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.1357104347880314254.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],AVAILABLE}
+2017-09-14 23:06:34.691 [main] INFO org.eclipse.jetty.server.Server(444): Started @8194ms
+2017-09-14 23:06:34.909 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 23:06:35.865 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 23:06:36.891 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 23:06:36.922 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 23:06:36.997 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 23:06:37.104 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 23:06:39.626 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 23:06:39.664 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 23:06:39.678 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 23:06:40.026 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 23:06:40.210 [main] INFO org.eclipse.jetty.server.AbstractConnector(320): Stopped ServerConnector@2a7d9b41{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-14 23:06:40.211 [main] INFO org.eclipse.jetty.server.session(167): Stopped scavenging
+2017-09-14 23:06:40.214 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Destroying Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 23:06:40.215 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(957): Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@6bbab114{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.1357104347880314254.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],UNAVAILABLE}
+2017-09-14 23:06:56.168 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 8372 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 23:06:56.171 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-14 23:06:57.223 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 23:07:00.134 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @5653ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-14 23:07:00.770 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-14 23:07:00.927 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-14 23:07:00.927 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-14 23:07:00.933 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 660000ms
+2017-09-14 23:07:00.943 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-14 23:07:00.948 [Thread-22] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket
+2017-09-14 23:07:01.150 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2251b3bc{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.1923996387285728539.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],AVAILABLE}
+2017-09-14 23:07:01.151 [main] INFO org.eclipse.jetty.server.Server(444): Started @6671ms
+2017-09-14 23:07:01.259 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 23:07:01.454 [Thread-23] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 23:07:01.852 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 23:07:02.304 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 23:07:02.322 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 23:07:02.354 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 23:07:02.430 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 23:07:05.248 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 23:07:05.336 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 23:07:05.371 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 23:07:06.602 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 23:07:06.707 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@3fbe503c{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-14 23:07:06.718 [main] INFO com.legend.Application(87): Started Application in 11.42 seconds (JVM running for 12.237)
+2017-09-14 23:07:14.572 [main] INFO com.legend.Application(87): Starting Application on DESKTOP-I05EV7F with PID 9332 (C:\GitHubProject\GitHubProject\SocketDemo\target\classes started by dell-pc in C:\GitHubProject\GitHubProject\SocketDemo)
+2017-09-14 23:07:14.576 [main] INFO com.legend.Application(87): No active profile set, falling back to default profiles: default
+2017-09-14 23:07:15.700 [background-preinit] INFO org.hibernate.validator.internal.util.Version(30): HV000001: Hibernate Validator 5.3.5.Final
+2017-09-14 23:07:18.478 [main] INFO org.eclipse.jetty.util.log(192): Logging initialized @5755ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-14 23:07:19.164 [main] INFO org.eclipse.jetty.server.Server(372): jetty-9.4.6.v20170531
+2017-09-14 23:07:19.315 [main] INFO org.eclipse.jetty.server.session(364): DefaultSessionIdManager workerName=node0
+2017-09-14 23:07:19.316 [main] INFO org.eclipse.jetty.server.session(369): No SessionScavenger set, using defaults
+2017-09-14 23:07:19.320 [main] INFO org.eclipse.jetty.server.session(149): Scavenging every 600000ms
+2017-09-14 23:07:19.327 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring embedded WebApplicationContext
+2017-09-14 23:07:19.618 [main] INFO org.eclipse.jetty.server.handler.ContextHandler(788): Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@38f981b6{/,[file:///C:/Users/dell-pc/AppData/Local/Temp/jetty-docbase.3623531841061075747.8088/, jar:file:/C:/Users/dell-pc/.m2/repository/io/springfox/springfox-swagger-ui/2.5.0/springfox-swagger-ui-2.5.0.jar!/META-INF/resources],AVAILABLE}
+2017-09-14 23:07:19.619 [main] INFO org.eclipse.jetty.server.Server(444): Started @6897ms
+2017-09-14 23:07:19.720 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation is not supported on static fields: public static java.lang.Integer com.legend.service.AmmeterService.SOCKET_PORT
+2017-09-14 23:07:20.181 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: public java.util.List com.legend.service.SysDictionaryService.getDictionartLists()
+2017-09-14 23:07:20.615 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==>  Preparing: select id, param_1, param_2, param_3, param_4,param_id,type from sys_dictionary 
+2017-09-14 23:07:20.636 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): ==> Parameters: 
+2017-09-14 23:07:20.657 [main] DEBUG dao.com.legend.dao.SysDictionaryMapper.selectByCondition(145): <==      Total: 29
+2017-09-14 23:07:20.723 [main] WARN o.s.b.factory.annotation.AutowiredAnnotationBeanPostProcessor(87): Autowired annotation should only be used on methods with parameters: private void com.legend.socket.Server.startServer()
+2017-09-14 23:07:22.868 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(120): Context refreshed
+2017-09-14 23:07:22.920 [main] INFO s.d.spring.web.plugins.DocumentationPluginsBootstrapper(123): Found 1 custom documentation plugin(s)
+2017-09-14 23:07:22.939 [main] INFO s.documentation.spring.web.scanners.ApiListingReferenceScanner(44): Scanning for api listing references
+2017-09-14 23:07:23.260 [main] INFO org.eclipse.jetty.server.handler.ContextHandler.application(2221): Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 23:07:23.332 [main] INFO org.eclipse.jetty.server.AbstractConnector(280): Started ServerConnector@3a4aadf8{HTTP/1.1,[http/1.1]}{0.0.0.0:8088}
+2017-09-14 23:07:23.342 [main] INFO com.legend.Application(87): Started Application in 9.678 seconds (JVM running for 10.62)
+2017-09-14 23:08:05.545 [Thread-18] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 23:08:42.277 [Thread-18] INFO com.legend.service.AmmeterService(128): dictionary :1: 0x28001
+2017-09-14 23:08:44.967 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==>  Preparing: select id, imsi, address, meter_no, ass_manage_code, rated_voltage, rated_current, max_current, active_acc_level, reactive_acc_level, active_constant, reactive_constant, type, product_date, protocol_no, software_no, hardware_no from ammeter_device where imsi = ? 
+2017-09-14 23:08:44.971 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): ==> Parameters: 12345678902(String)
+2017-09-14 23:08:45.031 [Thread-18] DEBUG dao.com.legend.dao.AmmeterDeviceMapper.selectByImsiKey(145): <==      Total: 1
+2017-09-14 23:08:50.061 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==>  Preparing: select id, ammeter_id, zero_line_current, grid_frequency, average_power_minute, active_demand, reactive_demand, apparent_demand, temperature, clock_cell_voltage, no_power_cell_voltage, battery_working_time, active_power, reverse_active_power, status from ammeter_working_info where ammeter_id = ? 
+2017-09-14 23:08:50.065 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): ==> Parameters: 3(Integer)
+2017-09-14 23:08:50.129 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.selectByAmmeterId(145): <==      Total: 1
+2017-09-14 23:08:55.562 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==>  Preparing: update ammeter_working_info SET zero_line_current = ? where ammeter_id = ? 
+2017-09-14 23:08:55.563 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): ==> Parameters: 123.1(String), 3(Integer)
+2017-09-14 23:08:55.880 [Thread-18] DEBUG d.c.l.dao.AmmeterWorkingInfoMapper.updateByAmmeterIdSelective(145): <==    Updates: 1
+2017-09-14 23:10:42.657 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.updateByAmmeterId(145): ==>  Preparing: update ammeter_working_info set status = ? where ammeter_id = ? 
+2017-09-14 23:10:42.659 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.updateByAmmeterId(145): ==> Parameters: 1(Integer), 3(Integer)
+2017-09-14 23:10:42.984 [Thread-18] DEBUG dao.com.legend.dao.AmmeterWorkingInfoMapper.updateByAmmeterId(145): <==    Updates: 1
+2017-09-14 23:10:45.928 [Thread-19] INFO com.legend.socket.Server(91): Ip2:127.0.0.1
+2017-09-14 23:10:45.981 [Thread-18] INFO com.legend.socket.Server(107): 线程操作结束12345678902+0x28001+123.1
+2017-09-14 23:10:45.981 [Thread-18] INFO com.legend.socket.Server(114): 线程操作结束----关闭socket

@@ -1,5 +1,8 @@
 package com.legend.utils;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by dell-pc on 2017/9/4.
  */
@@ -21,6 +24,23 @@ public class StringUtils {
             hexString.append(strHex);
         }
         return hexString.toString();
+    }
+
+    public static Map<String,Object> initDailyReportMap(){
+        Map<String,Object> dailyReportMap = new HashMap<>();
+        for (int i = 1;i<=12;i++){
+            dailyReportMap.put(String.valueOf(i),null);
+        }
+        return dailyReportMap;
+    }
+
+    public static Map<String,Object> initMonthReportMap(int month){
+        Integer[] days = {31,28,31,30,31,30,31,31,30,31,30,31};
+        Map<String,Object> monthReportMap = new HashMap<>();
+        for (int i=1;i<=days[month-1];i++){
+            monthReportMap.put(String.valueOf(i),null);
+        }
+        return monthReportMap;
     }
 
     /**

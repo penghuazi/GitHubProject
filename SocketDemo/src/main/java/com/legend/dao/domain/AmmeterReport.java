@@ -13,6 +13,20 @@ public class AmmeterReport {
 
     private Date sendTime;
 
+    private Integer hour;
+
+    private String dateTime;
+
+    private Integer type;
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -51,5 +65,21 @@ public class AmmeterReport {
 
     public void setSendTime(Date sendTime) {
         this.sendTime = sendTime;
+    }
+
+    public Integer getHour() {
+        return hour;
+    }
+
+    public void setHour(Integer hour) {
+        this.hour = hour;
+    }
+
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime == null ? null : dateTime.trim();
     }
 }

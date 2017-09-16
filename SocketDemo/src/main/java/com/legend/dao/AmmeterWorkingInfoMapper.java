@@ -14,7 +14,7 @@ public interface AmmeterWorkingInfoMapper {
 
     AmmeterWorkingInfo selectByAmmeterId(Integer ammeterId);
 
-    int updateByPrimaryKeySelective(AmmeterWorkingInfo record);
+    int updateByAmmeterIdSelective(AmmeterWorkingInfo record);
 
     int updateByAmmeterId(@Param("ammeterId") Integer ammeterId, @Param("status") Integer status);
 

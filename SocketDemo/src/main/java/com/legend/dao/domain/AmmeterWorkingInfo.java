@@ -1,6 +1,69 @@
 package com.legend.dao.domain;
 
 public class AmmeterWorkingInfo {
+
+    public int returnWorkInfoIndex(AmmeterWorkingInfo ammeterWorkingInfo){
+
+        if(ammeterWorkingInfo == null || ammeterWorkingInfo.getZeroLineCurrent() == null){
+            return 1;
+        }else if(ammeterWorkingInfo.getStatus() == 2 || ammeterWorkingInfo.getStatus() == 3){
+            return 29;
+        }
+        else if(ammeterWorkingInfo.getGridFrequency() == null){
+            return 2;
+        }else if(ammeterWorkingInfo.getAveragePowerMinute() == null){
+            return 3;
+        }else if(ammeterWorkingInfo.getActiveDemand() == null){
+            return 4;
+        }else if(ammeterWorkingInfo.getReactiveDemand() == null){
+            return 5;
+        }else if(ammeterWorkingInfo.getApparentDemand() == null){
+            return 6;
+        }else if(ammeterWorkingInfo.getTemperature() == null){
+            return 7;
+        }else if(ammeterWorkingInfo.getClockCellVoltage() == null){
+            return 8;
+        }else if(ammeterWorkingInfo.getNoPowerCellVoltage() == null){
+            return 9;
+        }else if(ammeterWorkingInfo.getBatteryWorkingTime() == null){
+            return 10;
+        }else if(ammeterWorkingInfo.getActivePower() == null){
+            return 11;
+        }else if(ammeterWorkingInfo.getReverseActivePower() == null){
+            return 12;
+        }
+        return -1;
+    }
+
+    public void setParams(String result,Integer index,AmmeterWorkingInfo ammeterWorkingInfo){
+        if(index ==1){
+            ammeterWorkingInfo.setZeroLineCurrent(result);
+        }else if(index ==2 ){
+            ammeterWorkingInfo.setGridFrequency(result);
+        }else if(index ==3 ){
+            ammeterWorkingInfo.setAveragePowerMinute(result);
+        }else if(index ==4 ){
+            ammeterWorkingInfo.setActiveDemand(result);
+        }else if(index ==5 ){
+            ammeterWorkingInfo.setReactiveDemand(result);
+        }else if(index ==6 ){
+            ammeterWorkingInfo.setApparentDemand(result);
+        }else if(index ==7 ){
+            ammeterWorkingInfo.setTemperature(result);
+        }else if(index ==8 ){
+            ammeterWorkingInfo.setClockCellVoltage(result);
+        }else if(index ==9 ){
+            ammeterWorkingInfo.setNoPowerCellVoltage(result);
+        }else if(index == 10 ){
+            ammeterWorkingInfo.setBatteryWorkingTime(result);
+        }else if(index ==11 ){
+            ammeterWorkingInfo.setActivePower(result);
+        }else if(index ==12 ){
+            ammeterWorkingInfo.setReverseActivePower(result);
+        }
+
+    }
+
     private Integer id;
 
     private Integer ammeterId;

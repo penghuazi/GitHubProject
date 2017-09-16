@@ -37,8 +37,64 @@
     select
     <include refid="Base_Column_List" />
     from ammeter_device
-
   </select>
+  <resultMap id="AmmeterInfoMap" type="com.legend.dao.domain.AmmeterInfoResult" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="imsi" property="imsi" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="meter_no" property="meterNo" jdbcType="VARCHAR" />
+    <result column="ass_manage_code" property="assManageCode" jdbcType="VARCHAR" />
+    <result column="rated_voltage" property="ratedVoltage" jdbcType="VARCHAR" />
+    <result column="rated_current" property="ratedCurrent" jdbcType="VARCHAR" />
+    <result column="max_current" property="maxCurrent" jdbcType="VARCHAR" />
+    <result column="active_acc_level" property="activeAccLevel" jdbcType="VARCHAR" />
+    <result column="reactive_acc_level" property="reactiveAccLevel" jdbcType="VARCHAR" />
+    <result column="active_constant" property="activeConstant" jdbcType="INTEGER" />
+    <result column="reactive_constant" property="reactiveConstant" jdbcType="INTEGER" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="product_date" property="productDate" jdbcType="TIMESTAMP" />
+    <result column="protocol_no" property="protocolNo" jdbcType="VARCHAR" />
+    <result column="software_no" property="softwareNo" jdbcType="VARCHAR" />
+    <result column="hardware_no" property="hardwareNo" jdbcType="VARCHAR" />
+    <result column="info_id" property="infoId" jdbcType="INTEGER" />
+    <result column="zero_line_current" property="zeroLineCurrent" jdbcType="VARCHAR" />
+    <result column="grid_frequency" property="gridFrequency" jdbcType="VARCHAR" />
+    <result column="average_power_minute" property="averagePowerMinute" jdbcType="VARCHAR" />
+    <result column="active_demand" property="activeDemand" jdbcType="VARCHAR" />
+    <result column="reactive_demand" property="reactiveDemand" jdbcType="VARCHAR" />
+    <result column="apparent_demand" property="apparentDemand" jdbcType="VARCHAR" />
+    <result column="temperature" property="temperature" jdbcType="VARCHAR" />
+    <result column="clock_cell_voltage" property="clockCellVoltage" jdbcType="VARCHAR" />
+    <result column="no_power_cell_voltage" property="noPowerCellVoltage" jdbcType="VARCHAR" />
+    <result column="battery_working_time" property="batteryWorkingTime" jdbcType="VARCHAR" />
+    <result column="active_power" property="activePower" jdbcType="VARCHAR" />
+    <result column="reverse_active_power" property="reverseActivePower" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+  </resultMap>
+
+  <select id="selectAmmeterInfo" resultMap="AmmeterInfoMap" parameterType="com.legend.dao.domain.condition.AmmeterCondition">
+    select device.id,device.imsi,device.address,device.meter_no,device.ass_manage_code,device.rated_voltage,
+device.rated_current,device.max_current,active_acc_level,reactive_acc_level,
+device.active_constant,device.reactive_constant,device.type,device.product_date,
+device.protocol_no,device.software_no,device.hardware_no,info.id as info_id,
+info.zero_line_current,info.grid_frequency,info.average_power_minute,
+info.active_demand,info.reactive_demand,info.apparent_demand,info.temperature,
+info.clock_cell_voltage,info.no_power_cell_voltage,info.battery_working_time,info.active_power,
+info.reverse_active_power,info.`status`
+ from ammeter_device device left JOIN
+    ammeter_working_info info on device.id = info.ammeter_id
+    where 1 = 1
+    <if test="meterNo != null and meterNo !=''">
+      and meterNo like CONCAT('%',#{meterNo,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="imsi != null and imsi != ''">
+      and device.imsi  like CONCAT('%',#{imsi,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="address != null and address != ''">
+      and device.address  like CONCAT('%',#{address,jdbcType=VARCHAR},'%')
+    </if>
+  </select>
+
   <select id="selectByImsiKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select
     <include refid="Base_Column_List" />
@@ -227,7 +283,63 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.legend.dao.domain.AmmeterDevice" >
+
+    <update id="updateByImsiKeySelective" parameterType="com.legend.dao.domain.AmmeterDevice" >
+        update ammeter_device
+        <set >
+            <if test="imsi != null" >
+                imsi = #{imsi,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null" >
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="meterNo != null" >
+                meter_no = #{meterNo,jdbcType=VARCHAR},
+            </if>
+            <if test="assManageCode != null" >
+                ass_manage_code = #{assManageCode,jdbcType=VARCHAR},
+            </if>
+            <if test="ratedVoltage != null" >
+                rated_voltage = #{ratedVoltage,jdbcType=VARCHAR},
+            </if>
+            <if test="ratedCurrent != null" >
+                rated_current = #{ratedCurrent,jdbcType=VARCHAR},
+            </if>
+            <if test="maxCurrent != null" >
+                max_current = #{maxCurrent,jdbcType=VARCHAR},
+            </if>
+            <if test="activeAccLevel != null" >
+                active_acc_level = #{activeAccLevel,jdbcType=VARCHAR},
+            </if>
+            <if test="reactiveAccLevel != null" >
+                reactive_acc_level = #{reactiveAccLevel,jdbcType=VARCHAR},
+            </if>
+            <if test="activeConstant != null" >
+                active_constant = #{activeConstant,jdbcType=INTEGER},
+            </if>
+            <if test="reactiveConstant != null" >
+                reactive_constant = #{reactiveConstant,jdbcType=INTEGER},
+            </if>
+            <if test="type != null" >
+                type = #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="productDate != null" >
+                product_date = #{productDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="protocolNo != null" >
+                protocol_no = #{protocolNo,jdbcType=VARCHAR},
+            </if>
+            <if test="softwareNo != null" >
+                software_no = #{softwareNo,jdbcType=VARCHAR},
+            </if>
+            <if test="hardwareNo != null" >
+                hardware_no = #{hardwareNo,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where imsi = #{imsi,jdbcType=VARCHAR}
+    </update>
+
+    <update id="updateByPrimaryKey" parameterType="com.legend.dao.domain.AmmeterDevice" >
     update ammeter_device
     set imsi = #{imsi,jdbcType=VARCHAR},
       address = #{address,jdbcType=VARCHAR},

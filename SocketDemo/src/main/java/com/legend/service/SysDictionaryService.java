@@ -41,7 +41,7 @@ public class SysDictionaryService {
 		String result = null;
 		for (SysDictionary dictionary : dictionaryList) {
 			if (paramId.intValue() == dictionary.getParamId()) {
-				result = "0x"+dictionary.getParam1()+
+				result = dictionary.getParam1()+
 						dictionary.getParam2()+
 						dictionary.getParam3()+
 						dictionary.getParam4();
@@ -65,7 +65,7 @@ public class SysDictionaryService {
 			String result = null;
 			for (SysDictionary dictionary : dictionaryList) {
 				if (paramId.intValue() == dictionary.getParamId()) {
-					result = "0x"+dictionary.getParam1()+
+					result = dictionary.getParam1()+
 							dictionary.getParam2()+
 							dictionary.getParam3()+
 							dictionary.getParam4();

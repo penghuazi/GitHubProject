@@ -1,0 +1,10 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "v1",
+    "title" : "doc.kashuo.com"
+  },
+  "host" : "www.kashuo.com",
+  "basePath" : "/v1",
+  "schemes" : [ "http" ]
+}

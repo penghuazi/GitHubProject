@@ -20,28 +20,28 @@ public class Results<T> {
      * 返回成功 不带数据
      */
     public static Results success(String message) {
-        return new Results(0, message);
+        return new Results(10000, message);
     }
 
     /**
      * 返回成功 带数据
      */
     public static Results success(String message, Object data) {
-        return new Results(0, message, data);
+        return new Results(10000, message, data);
     }
 
     /**
      * 直接返回数据
      */
     public static Results success(Object data) {
-        return new Results(0, "success", data);
+        return new Results(10000, "success", data);
     }
 
     /**
      * 返回失败
      */
     public static Results error(String message) {
-        return new Results(-1, message);
+        return new Results(10001, message);
     }
 
     /**
@@ -52,7 +52,7 @@ public class Results<T> {
     }
 
     public Results(Object data) {
-        this(0, "", data);
+        this(10000, "", data);
     }
 
     public Results(int code, String message) {

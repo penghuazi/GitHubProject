@@ -38,7 +38,7 @@ public class ClientProcess {
                 Socket socket = null;
                 try {
                     //创建一个流套接字并将其连接到指定主机上的指定端口号
-                    socket = new Socket(ammeterDevice.getAddress(), 12345);
+                    socket = new Socket(ammeterDevice.getAddress(), 20177);
                     System.out.println("**********************开闸合闸 开始会话**************** ");
                     //读取服务器端数据
                     DataInputStream input = new DataInputStream(socket.getInputStream());
